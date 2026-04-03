@@ -23,7 +23,7 @@ title: A First Course in Real Analysis
 email: andrew.dunn@gatech.edu
 description: >- # this means to ignore newlines until "baseurl:"
   A First Course in Real Analysis – an open, rigorous, and readable
-  introduction to the foundations of analysis
+  introduction to analysis
 baseurl: "/AnalysisBook.github.io" # the subpath of your site, e.g. /blog
 url: "https://adunnb.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: adunnb

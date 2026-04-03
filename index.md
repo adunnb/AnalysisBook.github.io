@@ -42,10 +42,5 @@ to the foundations of real analysis*!
 
 ---
 
-## 💡 Examples
 
-*In progress.*
-
----
-
-*This book is a work in progress. New content is added regularly.*
+*This book is a work in progress! New content is added regularly.*
