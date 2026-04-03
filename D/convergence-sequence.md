@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: definition
 title: "Convergence of a Sequence"
 chapter: "Sequences"
 ---
