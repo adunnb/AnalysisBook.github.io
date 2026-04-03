@@ -22,7 +22,7 @@ Welcome to **A First Course in Real Analysis** --
 *an open, rigorous, and readable introduction  
 to the foundations of real analysis*!
 
-📋 [Table of Contents](I/ToC)
+[Table of Contents](I/ToC)
 
 ---
 
