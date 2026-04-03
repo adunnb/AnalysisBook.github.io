@@ -30,28 +30,10 @@ github_username: adunnb
 
 
 # Build settings
-remote_theme: just-the-docs/just-the-docs
-color_scheme: light
-search_enabled: true
-heading_anchors: true
-
-just_the_docs:
-  collections:
-    definitions:
-      name: Definitions
-      nav_fold: false
-    theorems:
-      name: Theorems
-      nav_fold: false
-    proofs:
-      name: Proofs
-      nav_fold: false
-    examples:
-      name: Examples
-      nav_fold: false
+remote_theme: minima
 plugins:
   - jekyll-seo-tag
-  - jekyll-include-cache
+  - jekyll-feed
 
 
 # Exclude from processing.
