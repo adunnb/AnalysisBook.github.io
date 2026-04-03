@@ -26,23 +26,6 @@ to the foundations of real analysis*!
 
 ---
 
-## Definitions
-
-- [Convergence of a Sequence](D/convergence-sequence)
-
----
-
-## Theorems
-
-*In progress.*
-
----
-
-## Proofs
-
-*In progress.*
-
----
 
 
 *This book is a work in progress! New content is added regularly.*

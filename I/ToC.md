@@ -6,8 +6,6 @@ title: "Table of Contents"
 *Definitions* are set in *italics* –
 **Theorems** are printed in **bold**
 
----
-
 ### Chapter I: The Real Numbers
 
 1\. Completeness and the Real Numbers
@@ -22,41 +20,39 @@ title: "Table of Contents"
 &nbsp;&nbsp;&nbsp;&nbsp;1.1.7. **[Existence of square roots](../T/sqrt-existence)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;1.1.8. **[Nested interval property](../T/nested-interval)**<br>
 
----
-
 ### Chapter II: Sequences and Series
 
-2\. Sequences
+1\. Sequences
 
-&nbsp;&nbsp;2.1. Convergence<br>
-&nbsp;&nbsp;&nbsp;&nbsp;2.1.1. *[Convergence of a sequence](../D/convergence-sequence)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;2.1.2. *[Bounded sequence](../D/bounded-sequence)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;2.1.3. **[Uniqueness of limits](../T/limit-uniqueness)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;2.1.4. **[Boundedness of convergent sequences](../T/convergent-bounded)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;2.1.5. **[Algebra of limits](../T/algebra-limits)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;2.1.6. **[Squeeze theorem](../T/squeeze-theorem)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;2.1.7. **[Divergence criterion](../T/divergence-criterion)**<br>
+&nbsp;&nbsp;1.1. Convergence<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.1. *[Convergence of a sequence](../D/convergence-sequence)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.2. *[Bounded sequence](../D/bounded-sequence)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.3. **[Uniqueness of limits](../T/limit-uniqueness)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.4. **[Boundedness of convergent sequences](../T/convergent-bounded)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.5. **[Algebra of limits](../T/algebra-limits)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.6. **[Squeeze theorem](../T/squeeze-theorem)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.7. **[Divergence criterion](../T/divergence-criterion)**<br>
 
-&nbsp;&nbsp;2.2. Special Sequences<br>
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.1. *[Monotone sequence](../D/monotone-sequence)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.2. **[Monotone convergence theorem](../T/monotone-convergence)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.3. *[Subsequence](../D/subsequence)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.4. **[Bolzano–Weierstrass theorem](../T/bolzano-weierstrass)**<br>
+&nbsp;&nbsp;1.2. Special Sequences<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.2.1. *[Monotone sequence](../D/monotone-sequence)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.2.2. **[Monotone convergence theorem](../T/monotone-convergence)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.2.3. *[Subsequence](../D/subsequence)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.2.4. **[Bolzano–Weierstrass theorem](../T/bolzano-weierstrass)**<br>
 
-&nbsp;&nbsp;2.3. Cauchy Sequences<br>
-&nbsp;&nbsp;&nbsp;&nbsp;2.3.1. *[Cauchy sequence](../D/cauchy-sequence)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;2.3.2. **[Cauchy criterion for convergence](../T/cauchy-criterion)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;2.3.3. **[Completeness via Cauchy sequences](../T/cauchy-completeness)**<br>
+&nbsp;&nbsp;1.3. Cauchy Sequences<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.3.1. *[Cauchy sequence](../D/cauchy-sequence)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.3.2. **[Cauchy criterion for convergence](../T/cauchy-criterion)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.3.3. **[Completeness via Cauchy sequences](../T/cauchy-completeness)**<br>
 
-3\. Series
+2\. Series
 
-&nbsp;&nbsp;3.1. Convergence of Series<br>
-&nbsp;&nbsp;&nbsp;&nbsp;3.1.1. *[Convergence of a series](../D/convergence-series)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;3.1.2. *[Partial sums](../D/partial-sums)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;3.1.3. **[Cauchy criterion for series](../T/series-cauchy)**<br>
+&nbsp;&nbsp;2.1. Convergence of Series<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.1. *[Convergence of a series](../D/convergence-series)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.2. *[Partial sums](../D/partial-sums)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.3. **[Cauchy criterion for series](../T/series-cauchy)**<br>
 
-&nbsp;&nbsp;3.2. Convergence Tests<br>
-&nbsp;&nbsp;&nbsp;&nbsp;3.2.1. **[Comparison test](../T/comparison-test)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;3.2.2. **[Absolute convergence](../T/absolute-convergence)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;3.2.3. **[Alternating series test](../T/alternating-series)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;3.2.4. **[Ratio test](../T/ratio-test)**<br>
+&nbsp;&nbsp;2.2. Convergence Tests<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.1. **[Comparison test](../T/comparison-test)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.2. **[Absolute convergence](../T/absolute-convergence)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.3. **[Alternating series test](../T/alternating-series)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.4. **[Ratio test](../T/ratio-test)**<br>
