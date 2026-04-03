@@ -30,7 +30,7 @@ github_username: adunnb
 
 
 # Build settings
-remote_theme: minima
+theme: minima
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
