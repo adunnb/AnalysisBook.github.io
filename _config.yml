@@ -51,7 +51,7 @@ just_the_docs:
       nav_fold: false
 plugins:
   - jekyll-seo-tag
-  - jekyll-remote-theme
+  - jekyll-include-cache
 
 
 # Exclude from processing.
