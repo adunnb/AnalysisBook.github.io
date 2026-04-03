@@ -13,15 +13,12 @@ layout: default
 	
 	<!-- Index -->
 	<b>Index:</b>
-	<a href="/I/ToC">The Book of Statistical Proofs</a> &#x25B7;
-	<a href="/I/ToC#{{ page.chapter }}">{{ page.chapter }}</a> &#x25B7;
-	<a href="/I/ToC#{{ page.section }}">{{ page.section }}</a> &#x25B7;
-	<a href="/I/ToC#{{ page.topic }}">{{ page.topic }}</a> &#x25B7;
-	{{ page.definition }} <br><br>
+	<a href="/AnalysisBook.github.io/I/ToC">A First Course in Real Analysis</a> &#x25B7;
+	{{ page.chapter }} &#x25B7;
+	{{ page.title }} <br><br>
 	
 	<!-- Definition -->
 	{{ content }}
-	<div align="right"><b>&nbsp;</b></div>
 	
 	<!-- Sources -->
 	{% if page.sources %}
@@ -35,27 +32,8 @@ layout: default
 		  -->{% if item.doi %}; DOI: <a href="https://doi.org/{{item.doi}}">{{item.doi}}</a>{% endif %}.
 	    </li>
 	  {% endfor %} </ul><br>
-	{% else %}
-	  <b>Sources:</b> <br><ul><li><a href="https://github.com/StatProofBook/StatProofBook.github.io/wiki/What-does-%22original-work%22-mean%3F">original work</a></li></ul><br>
-    {% endif %}
-	
-	<!-- Metadata -->
-	<b>Metadata:</b> ID: <a href="/I/DbN">{{ page.def_id }}</a> | shortcut: <a href="/I/DbT">{{ page.shortcut }}</a> |
-	{% if page.username %}
-	  author: <a href="https://github.com/{{ page.username }}">{{ page.username }}</a> |
-	{% elsif page.author %}
-	  author: {{ page.author }} |
-	{% else %}
-	  author: unknown |
 	{% endif %}
-	date: {{ page.date | date: "%Y-%m-%d, %H:%M" }}.
 	
-  </div>
-
-  <!-- "edit this definition" -->
-  <div style="text-align:right">
-    <small><a href="https://github.com/StatProofBook/StatProofBook.github.io/blob/master/D/{{ page.shortcut }}.md">view/edit this definition</a></small><br>
-	<small><a href="/citations/">cite this definition</a></small>
   </div>
 
 </article>
