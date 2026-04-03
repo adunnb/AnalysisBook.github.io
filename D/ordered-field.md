@@ -31,4 +31,4 @@ An **ordered field** is a field $F$ together with a relation $<$ satisfying for 
 3. If $a < b$, then $a + c < b + c$
 4. If $a < b$ and $c > 0$, then $ac < bc$
 
-The real numbers $\mathbb{R}$ form an ordered field. The rational numbers $\mathbb{Q}$ also form an ordered field, and is actually the *smallest* ordered field. 
+The real numbers $\mathbb{R}$ form an ordered field. The rational numbers $\mathbb{Q}$ also form an ordered field, and are actually the *smallest* ordered field.
