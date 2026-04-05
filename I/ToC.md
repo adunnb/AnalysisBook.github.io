@@ -56,3 +56,24 @@ title: "Table of Contents"
 &nbsp;&nbsp;&nbsp;&nbsp;2.2.2. **[Absolute convergence](../T/absolute-convergence)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;2.2.3. **[Alternating series test](../T/alternating-series)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;2.2.4. **[Ratio test](../T/ratio-test)**<br>
+
+### Chapter III: Limits and Continuity
+
+1\. Limits of Functions
+
+&nbsp;&nbsp;1.1. Functional Limits<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.1. *[Limit point](../D/limit-point)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.2. *[Limit of a function](../D/limit-function)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.3. **[Sequential characterization of functional limits](../T/sequential-limits)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.4. **[Algebraic limit theorem for functions](../T/function-algebra)**<br>
+
+2\. Continuity
+
+&nbsp;&nbsp;2.1. Continuous Functions<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.1. *[Continuity at a point](../D/continuity)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.2. *[Uniform continuity](../D/uniform-continuity)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.3. **[Algebraic continuity theorem](../T/algebraic-continuity)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.4. **[Composition of continuous functions](../T/composition-continuous)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.5. **[Intermediate value theorem](../T/intermediate-value)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.6. **[Extreme value theorem](../T/extreme-value)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.7. **[Uniform continuity theorem](../T/uniform-continuity-theorem)**<br>
