@@ -77,3 +77,23 @@ title: "Table of Contents"
 &nbsp;&nbsp;&nbsp;&nbsp;2.1.5. **[Intermediate value theorem](../T/intermediate-value)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;2.1.6. **[Extreme value theorem](../T/extreme-value)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;2.1.7. **[Uniform continuity theorem](../T/uniform-continuity-theorem)**<br>
+
+### Chapter IV: Differentiation
+
+1\. The Derivative
+
+&nbsp;&nbsp;1.1. Differentiability<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.1. *[The derivative](../D/derivative)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.2. **[Differentiability implies continuity](../T/diff-implies-cont)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.3. **[Algebra of differentiation](../T/differentiation-algebra)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.4. **[Chain rule](../T/chain-rule)**<br>
+
+2\. Mean Value Theorems
+
+&nbsp;&nbsp;2.1. Applications of the Derivative<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.1. *[Interior extremum](../D/interior-extremum)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.2. **[Interior extremum theorem](../T/interior-extremum)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.3. **[Rolle's theorem](../T/rolles-theorem)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.4. **[Mean value theorem](../T/mean-value)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.5. **[Generalized mean value theorem](../T/generalized-mean-value)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.6. **[L'Hôpital's rule](../T/lhopital)**<br>
