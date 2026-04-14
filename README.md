@@ -22,9 +22,8 @@ The table of contents is in `I/ToC.md`.
 
 ## Status
 
-This book is a work in progress. Chapters I and II are currently 
-being written, covering the real number system and sequences and 
-series.
+This book is a work in progress. Chapters V and VI are currently 
+being written.
 
 ## Attribution
 
