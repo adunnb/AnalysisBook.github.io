@@ -3,7 +3,7 @@ layout: page
 title: "Table of Contents"
 ---
 
-*Definitions* are set in *italics* –
+*Definitions* are set in *italics* --
 **Theorems** are printed in **bold**
 
 ### Chapter I: The Real Numbers
@@ -96,7 +96,7 @@ title: "Table of Contents"
 &nbsp;&nbsp;&nbsp;&nbsp;2.1.3. **[Rolle's theorem](../T/rolles-theorem)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;2.1.4. **[Mean value theorem](../T/mean-value)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;2.1.5. **[Generalized mean value theorem](../T/generalized-mean-value)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;2.1.6. **[L'Hôpital's rule](../T/lhopital)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.6. **[L'Hopital's rule](../T/lhopital)**<br>
 
 ### Chapter V: Integration
 
@@ -122,3 +122,25 @@ title: "Table of Contents"
 &nbsp;&nbsp;3.1. Connecting Differentiation and Integration<br>
 &nbsp;&nbsp;&nbsp;&nbsp;3.1.1. **[Fundamental theorem of calculus I](../T/ftc-1)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;3.1.2. **[Fundamental theorem of calculus II](../T/ftc-2)**<br>
+
+### Chapter VI: Sequences of Functions
+
+1\. Pointwise and Uniform Convergence
+
+&nbsp;&nbsp;1.1. Convergence of Function Sequences<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.1. *[Pointwise convergence](../D/pointwise-convergence)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.2. *[Uniform convergence](../D/uniform-convergence)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.3. **[Cauchy criterion for uniform convergence](../T/uniform-cauchy)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.4. **[Continuity of uniform limits](../T/uniform-limit-continuous)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.5. **[Integrability of uniform limits](../T/uniform-limit-integrable)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.6. **[Differentiability of uniform limits](../T/uniform-limit-differentiable)**<br>
+
+2\. Power Series
+
+&nbsp;&nbsp;2.1. Convergence of Power Series<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.1. *[Power series](../D/power-series)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.2. *[Radius of convergence](../D/radius-convergence)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.3. **[Convergence of power series](../T/power-series-convergence)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.4. **[Continuity of power series](../T/power-series-continuous)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.5. **[Differentiability of power series](../T/power-series-differentiable)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.6. **[Abel's theorem](../T/abel-theorem)**<br>
