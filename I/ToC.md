@@ -11,14 +11,18 @@ title: "Table of Contents"
 1\. Completeness and the Real Numbers
 
 &nbsp;&nbsp;1.1. The Real Numbers<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.1. *[Absolute value](../D/absolute-value)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.2. *[Ordered field](../D/ordered-field)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.3. *[Upper bound and supremum](../D/supremum)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.4. **[Completeness axiom](../T/completeness-axiom)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.5. **[Archimedean property](../T/archimedean)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.6. **[Density of the rationals](../T/density-rationals)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.7. **[Existence of square roots](../T/sqrt-existence)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.8. **[Nested interval property](../T/nested-interval)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.1. *[Natural numbers and integers](../D/natural-numbers)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.2. *[Absolute value](../D/absolute-value)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.3. *[Neighborhood](../D/neighborhood)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.4. *[Ordered field](../D/ordered-field)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.5. *[Upper bound and supremum](../D/supremum)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.6. *[Infimum and greatest lower bound](../D/infimum)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.7. **[Completeness axiom](../T/completeness-axiom)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.8. **[Infimum property](../T/infimum-property)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.9. **[Archimedean property](../T/archimedean)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.10. **[Density of the rationals](../T/density-rationals)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.11. **[Existence of square roots](../T/sqrt-existence)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.12. **[Nested interval property](../T/nested-interval)**<br>
 
 ### Chapter II: Sequences and Series
 
@@ -27,22 +31,27 @@ title: "Table of Contents"
 &nbsp;&nbsp;1.1. Convergence<br>
 &nbsp;&nbsp;&nbsp;&nbsp;1.1.1. *[Convergence of a sequence](../D/convergence-sequence)*<br>
 &nbsp;&nbsp;&nbsp;&nbsp;1.1.2. *[Bounded sequence](../D/bounded-sequence)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.3. **[Uniqueness of limits](../T/limit-uniqueness)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.4. **[Boundedness of convergent sequences](../T/convergent-bounded)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.5. **[Algebra of limits](../T/algebra-limits)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.6. **[Squeeze theorem](../T/squeeze-theorem)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.7. **[Divergence criterion](../T/divergence-criterion)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.3. *[Divergence to infinity](../D/divergence-infinity)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.4. **[Uniqueness of limits](../T/limit-uniqueness)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.5. **[Boundedness of convergent sequences](../T/convergent-bounded)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.6. **[Algebra of limits](../T/algebra-limits)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.7. **[Squeeze theorem](../T/squeeze-theorem)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.8. **[Divergence criterion](../T/divergence-criterion)**<br>
 
 &nbsp;&nbsp;1.2. Special Sequences<br>
 &nbsp;&nbsp;&nbsp;&nbsp;1.2.1. *[Monotone sequence](../D/monotone-sequence)*<br>
 &nbsp;&nbsp;&nbsp;&nbsp;1.2.2. **[Monotone convergence theorem](../T/monotone-convergence)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;1.2.3. *[Subsequence](../D/subsequence)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.2.4. **[Bolzano–Weierstrass theorem](../T/bolzano-weierstrass)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.2.4. **[Convergence of subsequences](../T/subsequence-convergence)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.2.5. **[Bolzano–Weierstrass theorem](../T/bolzano-weierstrass)**<br>
 
 &nbsp;&nbsp;1.3. Cauchy Sequences<br>
 &nbsp;&nbsp;&nbsp;&nbsp;1.3.1. *[Cauchy sequence](../D/cauchy-sequence)*<br>
 &nbsp;&nbsp;&nbsp;&nbsp;1.3.2. **[Cauchy criterion for convergence](../T/cauchy-criterion)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;1.3.3. **[Completeness via Cauchy sequences](../T/cauchy-completeness)**<br>
+
+&nbsp;&nbsp;1.4. Limsup and Liminf<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.4.1. *[Limsup and liminf](../D/limsup-liminf)*<br>
 
 2\. Series
 
@@ -52,31 +61,44 @@ title: "Table of Contents"
 &nbsp;&nbsp;&nbsp;&nbsp;2.1.3. **[Cauchy criterion for series](../T/series-cauchy)**<br>
 
 &nbsp;&nbsp;2.2. Convergence Tests<br>
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.1. **[Comparison test](../T/comparison-test)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.2. **[Absolute convergence](../T/absolute-convergence)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.3. **[Alternating series test](../T/alternating-series)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;2.2.4. **[Ratio test](../T/ratio-test)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.1. **[Geometric series test](../T/geometric-series)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.2. **[Comparison test](../T/comparison-test)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.3. **[Limit comparison test](../T/limit-comparison)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.4. **[Absolute convergence](../T/absolute-convergence)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.5. **[Alternating series test](../T/alternating-series)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.6. **[Ratio test](../T/ratio-test)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.7. **[Root test](../T/root-test)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.8. **[Integral test](../T/integral-test)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.9. **[p-series test](../T/p-series)**<br>
 
 ### Chapter III: Limits and Continuity
 
-1\. Limits of Functions
+1\. Topology of the Real Line
 
-&nbsp;&nbsp;1.1. Functional Limits<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.1. *[Limit point](../D/limit-point)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.2. *[Limit of a function](../D/limit-function)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.3. **[Sequential characterization of functional limits](../T/sequential-limits)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.4. **[Algebraic limit theorem for functions](../T/function-algebra)**<br>
+&nbsp;&nbsp;1.1. Open and Closed Sets<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.1. *[Open and closed sets](../D/open-set)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.2. *[Compact set](../D/compact-set)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.3. **[Heine-Borel theorem](../T/heine-borel)**<br>
 
-2\. Continuity
+2\. Limits of Functions
 
-&nbsp;&nbsp;2.1. Continuous Functions<br>
-&nbsp;&nbsp;&nbsp;&nbsp;2.1.1. *[Continuity at a point](../D/continuity)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;2.1.2. *[Uniform continuity](../D/uniform-continuity)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;2.1.3. **[Algebraic continuity theorem](../T/algebraic-continuity)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;2.1.4. **[Composition of continuous functions](../T/composition-continuous)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;2.1.5. **[Intermediate value theorem](../T/intermediate-value)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;2.1.6. **[Extreme value theorem](../T/extreme-value)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;2.1.7. **[Uniform continuity theorem](../T/uniform-continuity-theorem)**<br>
+&nbsp;&nbsp;2.1. Functional Limits<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.1. *[Limit point](../D/limit-point)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.2. *[Limit of a function](../D/limit-function)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.3. **[Sequential characterization of functional limits](../T/sequential-limits)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.4. **[Algebraic limit theorem for functions](../T/function-algebra)**<br>
+
+3\. Continuity
+
+&nbsp;&nbsp;3.1. Continuous Functions<br>
+&nbsp;&nbsp;&nbsp;&nbsp;3.1.1. *[Continuity at a point](../D/continuity)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;3.1.2. *[Uniform continuity](../D/uniform-continuity)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;3.1.3. **[Algebraic continuity theorem](../T/algebraic-continuity)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;3.1.4. **[Composition of continuous functions](../T/composition-continuous)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;3.1.5. **[Characterization of continuity via open sets](../T/open-sets-continuity)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;3.1.6. **[Intermediate value theorem](../T/intermediate-value)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;3.1.7. **[Extreme value theorem](../T/extreme-value)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;3.1.8. **[Uniform continuity theorem](../T/uniform-continuity-theorem)**<br>
 
 ### Chapter IV: Differentiation
 
@@ -84,9 +106,10 @@ title: "Table of Contents"
 
 &nbsp;&nbsp;1.1. Differentiability<br>
 &nbsp;&nbsp;&nbsp;&nbsp;1.1.1. *[The derivative](../D/derivative)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.2. **[Differentiability implies continuity](../T/diff-implies-cont)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.3. **[Algebra of differentiation](../T/differentiation-algebra)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.4. **[Chain rule](../T/chain-rule)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.2. *[Higher order derivatives](../D/higher-derivatives)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.3. **[Differentiability implies continuity](../T/diff-implies-cont)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.4. **[Algebra of differentiation](../T/differentiation-algebra)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.5. **[Chain rule](../T/chain-rule)**<br>
 
 2\. Mean Value Theorems
 
@@ -97,6 +120,7 @@ title: "Table of Contents"
 &nbsp;&nbsp;&nbsp;&nbsp;2.1.4. **[Mean value theorem](../T/mean-value)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;2.1.5. **[Generalized mean value theorem](../T/generalized-mean-value)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;2.1.6. **[L'Hopital's rule](../T/lhopital)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.7. **[Taylor's theorem](../T/taylors-theorem)**<br>
 
 ### Chapter V: Integration
 
@@ -116,6 +140,7 @@ title: "Table of Contents"
 &nbsp;&nbsp;&nbsp;&nbsp;2.1.1. **[Linearity of the integral](../T/integral-linearity)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;2.1.2. **[Additivity over subintervals](../T/integral-additivity)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;2.1.3. **[Integral inequality](../T/integral-inequality)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.4. **[Integration by substitution](../T/substitution-rule)**<br>
 
 3\. The Fundamental Theorem of Calculus
 
@@ -144,3 +169,10 @@ title: "Table of Contents"
 &nbsp;&nbsp;&nbsp;&nbsp;2.1.4. **[Continuity of power series](../T/power-series-continuous)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;2.1.5. **[Differentiability of power series](../T/power-series-differentiable)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;2.1.6. **[Abel's theorem](../T/abel-theorem)**<br>
+
+3\. Taylor Series
+
+&nbsp;&nbsp;3.1. Taylor Series and Applications<br>
+&nbsp;&nbsp;&nbsp;&nbsp;3.1.1. *[Taylor series](../D/taylor-series)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;3.1.2. **[Convergence of Taylor series](../T/taylor-series-convergence)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;3.1.3. **[Common Taylor series](../T/common-taylor-series)**<br>
