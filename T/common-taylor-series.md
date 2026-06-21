@@ -4,7 +4,7 @@ title: "Common Taylor Series"
 chapter: "Sequences of Functions"
 ---
 
-**Theorem:** The following Maclaurin series hold for all $x \in \mathbb{R}$ unless otherwise stated:
+**Theorem:** The following [Maclaurin series](../D/taylor-series) hold for all $x \in \mathbb{R}$ unless otherwise stated:
 
 $$e^x = \sum_{n=0}^{\infty} \frac{x^n}{n!} = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots$$
 
@@ -16,7 +16,7 @@ $$\frac{1}{1-x} = \sum_{n=0}^{\infty} x^n = 1 + x + x^2 + \cdots \quad \text{for
 
 $$\ln(1+x) = \sum_{n=1}^{\infty} \frac{(-1)^{n+1} x^n}{n} = x - \frac{x^2}{2} + \frac{x^3}{3} - \cdots \quad \text{for } \lvert x \rvert \leq 1,\ x \neq -1$$
 
-**Proof for $e^x$:** Let $f(x) = e^x$. Then $f^{(n)}(x) = e^x$ for all $n$, so $f^{(n)}(0) = 1$. The Lagrange remainder is:
+**Proof for $e^x$:** Let $f(x) = e^x$. Then $f^{(n)}(x) = e^x$ for all $n$, so $f^{(n)}(0) = 1$. The [Lagrange remainder](../T/taylors-theorem) is:
 
 $$R_n(x) = \frac{e^\xi}{(n+1)!} x^{n+1}$$
 

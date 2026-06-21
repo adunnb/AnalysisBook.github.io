@@ -14,4 +14,4 @@ $$n > N \implies \lvert f_n(x) - f(x) \rvert < \varepsilon$$
 
 We write $f_n \to f$ pointwise on $A$.
 
-**Remark:** The key feature of pointwise convergence is that $N$ may depend on the point $x$. At different points in $A$, the sequence may converge at very different rates. This makes pointwise convergence a relatively weak notion, and it fails to preserve many properties like continuity and integrability.
+**Remark:** The key feature of pointwise convergence is that $N$ may depend on the point $x$. At different points in $A$, the sequence may converge at very different rates. This makes pointwise convergence a relatively weak notion, and it fails to preserve many properties like [continuity](../D/continuity) and [integrability](../D/riemann-integral).

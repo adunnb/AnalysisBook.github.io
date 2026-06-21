@@ -4,7 +4,7 @@ title: "Limsup and Liminf"
 chapter: "Sequences and Series"
 ---
 
-**Definition:** Let $(a_n)$ be a bounded sequence. For each $n \in \mathbb{N}$, define:
+**Definition:** Let $(a_n)$ be a [bounded sequence](../D/bounded-sequence). For each $n \in \mathbb{N}$, define:
 
 $$y_n = \sup\{a_k : k \geq n\}, \qquad z_n = \inf\{a_k : k \geq n\}$$
 

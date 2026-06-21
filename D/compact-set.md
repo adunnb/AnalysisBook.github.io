@@ -4,7 +4,7 @@ title: "Compact Set"
 chapter: "Limits and Continuity"
 ---
 
-**Definition:** A set $K \subseteq \mathbb{R}$ is **compact** if every sequence $(a_n)$ in $K$ has a subsequence that converges to a limit in $K$.
+**Definition:** A set $K \subseteq \mathbb{R}$ is **compact** if every sequence $(a_n)$ in $K$ has a [subsequence](../D/subsequence) that [converges](../D/convergence-sequence) to a limit in $K$.
 
 This is called the **sequential compactness** definition of compactness.
 

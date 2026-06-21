@@ -8,7 +8,7 @@ chapter: "Sequences and Series"
 
 $$L = \limsup_{n \to \infty} \lvert a_n \rvert^{1/n}$$
 
-(i) If $L < 1$, the series converges absolutely.
+(i) If $L < 1$, the series [converges absolutely](../T/absolute-convergence).
 
 (ii) If $L > 1$, the series diverges.
 

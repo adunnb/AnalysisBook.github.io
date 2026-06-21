@@ -4,7 +4,7 @@ title: "Taylor Series"
 chapter: "Sequences of Functions"
 ---
 
-**Definition:** Let $f : A \to \mathbb{R}$ be infinitely differentiable at $c \in A$. The **Taylor series** of $f$ centered at $c$ is the [power series](../D/power-series):
+**Definition:** Let $f : A \to \mathbb{R}$ be [infinitely differentiable](../D/higher-derivatives) at $c \in A$. The **Taylor series** of $f$ centered at $c$ is the [power series](../D/power-series):
 
 $$\sum_{n=0}^{\infty} \frac{f^{(n)}(c)}{n!}(x-c)^n = f(c) + f'(c)(x-c) + \frac{f''(c)}{2!}(x-c)^2 + \cdots$$
 

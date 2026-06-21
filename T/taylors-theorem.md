@@ -4,7 +4,7 @@ title: "Taylor's Theorem"
 chapter: "Differentiation"
 ---
 
-**Theorem:** Let $f : [a, b] \to \mathbb{R}$ be $n$ times differentiable on $[a, b]$ with $f^{(n)}$ [continuous](../D/continuity) on $[a, b]$ and $(n+1)$ times differentiable on $(a, b)$. Then for any $x, c \in [a, b]$ there exists a point $\xi$ strictly between $x$ and $c$ such that:
+**Theorem:** Let $f : [a, b] \to \mathbb{R}$ be [$n$ times differentiable](../D/higher-derivatives) on $[a, b]$ with $f^{(n)}$ [continuous](../D/continuity) on $[a, b]$ and $(n+1)$ times differentiable on $(a, b)$. Then for any $x, c \in [a, b]$ there exists a point $\xi$ strictly between $x$ and $c$ such that:
 
 $$f(x) = \sum_{k=0}^{n} \frac{f^{(k)}(c)}{k!}(x-c)^k + \frac{f^{(n+1)}(\xi)}{(n+1)!}(x-c)^{n+1}$$
 

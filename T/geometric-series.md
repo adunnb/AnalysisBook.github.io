@@ -10,7 +10,7 @@ $$\sum_{n=0}^{\infty} r^n = \frac{1}{1-r}$$
 
 If $\lvert r \rvert \geq 1$, the series diverges.
 
-**Proof:** The $n$-th partial sum is:
+**Proof:** The $n$-th [partial sum](../D/partial-sums) is:
 
 $$s_n = \sum_{k=0}^{n} r^k = 1 + r + r^2 + \cdots + r^n$$
 

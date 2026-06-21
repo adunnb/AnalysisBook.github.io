@@ -10,7 +10,7 @@ $$\lim_{x \to 1^-} f(x) = S$$
 
 **Remark:** Abel's theorem says that if a power series converges at an endpoint of its interval of convergence, then the function defined by the series is continuous from the appropriate side at that endpoint. This extends the [continuity of power series](../T/power-series-continuous) result to the boundary of the interval of convergence.
 
-**Proof:** Without loss of generality assume $S = 0$ (replace $c_0$ by $c_0 - S$ if necessary). Let $s_n = c_0 + c_1 + \cdots + c_n$ be the partial sums, so $s_n \to 0$. For $x \in [0, 1)$, write using Abel summation:
+**Proof:** Without loss of generality assume $S = 0$ (replace $c_0$ by $c_0 - S$ if necessary). Let $s_n = c_0 + c_1 + \cdots + c_n$ be the [partial sums](../D/partial-sums), so $s_n \to 0$. For $x \in [0, 1)$, write using Abel summation:
 
 $$f(x) = \sum_{n=0}^{\infty} c_n x^n = \sum_{n=0}^{\infty} (s_n - s_{n-1}) x^n$$
 

@@ -10,4 +10,4 @@ $$\lvert x - c \rvert < \varepsilon$$
 
 Equivalently, $c$ is a limit point of $A$ if every $\varepsilon$-neighborhood $(c - \varepsilon, c + \varepsilon)$ contains a point of $A$ other than $c$ itself.
 
-**Remark:** A limit point of $A$ need not belong to $A$. For example, $0$ is a limit point of the open interval $(0, 1)$ even though $0 \notin (0,1)$. The concept is important because the limit of a function $f$ at a point $c$ is only meaningful when $c$ is a limit point of the domain of $f$ — otherwise there are no nearby points to approach $c$ from.
+**Remark:** A limit point of $A$ need not belong to $A$. For example, $0$ is a limit point of the open interval $(0, 1)$ even though $0 \notin (0,1)$. The concept is important because the [limit of a function](../D/limit-function) $f$ at a point $c$ is only meaningful when $c$ is a limit point of the domain of $f$ — otherwise there are no nearby points to approach $c$ from.

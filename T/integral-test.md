@@ -22,4 +22,4 @@ $$\sum_{n=2}^{N+1} a_n \leq \int_1^{N+1} f(x)\, dx \leq \sum_{n=1}^{N} a_n$$
 
 **($\Rightarrow$)** If $\sum a_n$ converges, the right inequality shows $\int_1^{N+1} f \leq \sum_{n=1}^{\infty} a_n < \infty$ for all $N$, so the integral converges.
 
-**($\Leftarrow$)** If $\int_1^{\infty} f$ converges, the left inequality shows $\sum_{n=2}^{N+1} a_n \leq \int_1^{\infty} f < \infty$ for all $N$, so the partial sums are bounded. Since $a_n > 0$, the series converges by the [monotone convergence theorem](../T/monotone-convergence).
+**($\Leftarrow$)** If $\int_1^{\infty} f$ converges, the left inequality shows $\sum_{n=2}^{N+1} a_n \leq \int_1^{\infty} f < \infty$ for all $N$, so the [partial sums](../D/partial-sums) are bounded. Since $a_n > 0$, the series converges by the [monotone convergence theorem](../T/monotone-convergence).

@@ -10,7 +10,7 @@ chapter: "Limits and Continuity"
 
 **($\Rightarrow$) Compact implies closed and bounded.**
 
-**Bounded:** Suppose $K$ is not bounded. Then for each $n \in \mathbb{N}$ there exists $a_n \in K$ with $\lvert a_n \rvert > n$. The sequence $(a_n)$ has no convergent subsequence since its terms diverge to infinity, contradicting compactness.
+**Bounded:** Suppose $K$ is not bounded. Then for each $n \in \mathbb{N}$ there exists $a_n \in K$ with $\lvert a_n \rvert > n$. The sequence $(a_n)$ has no convergent [subsequence](../D/subsequence) since its terms diverge to infinity, contradicting compactness.
 
 **Closed:** Suppose $(a_n)$ is a sequence in $K$ converging to some $L \in \mathbb{R}$. Since $K$ is compact, $(a_n)$ has a subsequence converging to some $x \in K$. By [uniqueness of limits](../T/limit-uniqueness), $x = L$. Therefore $L \in K$, so $K$ is closed.
 

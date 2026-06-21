@@ -8,7 +8,7 @@ chapter: "Sequences of Functions"
 
 **Remark:** The convergence is uniform on compact subsets of the interval of convergence, but need not be uniform on the full open interval $(a-R, a+R)$.
 
-**Proof:** Without loss of generality take $a = 0$. Let $0 < r < R$ and choose $s$ with $r < s < R$. Since the series converges absolutely at $x = s$, the terms $c_n s^n \to 0$ and in particular are bounded: there exists $M > 0$ with $\lvert c_n \rvert s^n \leq M$ for all $n$.
+**Proof:** Without loss of generality take $a = 0$. Let $0 < r < R$ and choose $s$ with $r < s < R$. Since the series [converges absolutely](../T/absolute-convergence) at $x = s$, the terms $c_n s^n \to 0$ and in particular are bounded: there exists $M > 0$ with $\lvert c_n \rvert s^n \leq M$ for all $n$.
 
 For $\lvert x \rvert \leq r$ and all $n$:
 

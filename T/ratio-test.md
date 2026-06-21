@@ -8,7 +8,7 @@ chapter: "Sequences and Series"
 
 $$L = \lim_{n \to \infty} \left\lvert \frac{a_{n+1}}{a_n} \right\rvert$$
 
-(i) If $L < 1$, the series converges absolutely.
+(i) If $L < 1$, the series [converges absolutely](../T/absolute-convergence).
 
 (ii) If $L > 1$, the series diverges.
 

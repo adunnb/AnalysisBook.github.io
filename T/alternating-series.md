@@ -12,7 +12,7 @@ chapter: "Sequences and Series"
 
 Then the alternating series $\sum_{n=1}^{\infty} (-1)^{n+1} a_n = a_1 - a_2 + a_3 - a_4 + \cdots$ converges.
 
-**Proof:** Let $s_n$ denote the $n$-th partial sum. Consider the even partial sums:
+**Proof:** Let $s_n$ denote the $n$-th [partial sum](../D/partial-sums). Consider the even partial sums:
 
 $$s_{2n} = (a_1 - a_2) + (a_3 - a_4) + \cdots + (a_{2n-1} - a_{2n})$$
 
