@@ -4,7 +4,7 @@ title: "Infimum Property"
 chapter: "Completeness and the Real Numbers"
 ---
 
-**Theorem:** Every non-empty subset of $\mathbb{R}$ that is bounded below has an [infimum](../D/infimum) in $\mathbb{R}$.
+**Theorem:** Every non-empty [subset](../D/subset) of $\mathbb{R}$ that is bounded below has an [infimum](../D/infimum) in $\mathbb{R}$.
 
 **Remark:** This is the mirror image of the [completeness axiom](../T/completeness-axiom) and follows directly from it. Together they say that $\mathbb{R}$ is complete in both directions.
 

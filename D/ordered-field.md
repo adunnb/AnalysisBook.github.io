@@ -1,7 +1,7 @@
 ---
 layout: definition
 title: "Ordered Field"
-chapter: "Completeness and the Real Numbers"
+chapter: "The Rational Numbers"
 ---
 
 **Definition:** A **field** is a set $F$ equipped with two operations, addition and multiplication, satisfying the following axioms for all $a, b, c \in F$:

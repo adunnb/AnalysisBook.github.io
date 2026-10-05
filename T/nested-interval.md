@@ -8,7 +8,7 @@ chapter: "Completeness and the Real Numbers"
 
 $$I_1 \supseteq I_2 \supseteq I_3 \supseteq \cdots$$
 
-Then the intersection $\bigcap_{n=1}^{\infty} I_n$ is non-empty.
+Then the [intersection](../D/union-intersection) $\bigcap_{n=1}^{\infty} I_n$ is non-empty.
 
 **Remark:** This theorem is a direct consequence of the [completeness axiom](../T/completeness-axiom) and fails for open intervals. For example, the open intervals $\left(0, \frac{1}{n}\right)$ are nested but their intersection is empty.
 

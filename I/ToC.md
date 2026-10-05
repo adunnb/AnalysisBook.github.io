@@ -6,23 +6,40 @@ title: "Table of Contents"
 *Definitions* are set in *italics* --
 **Theorems** are printed in **bold**
 
-### Chapter I: The Real Numbers
+### Chapter I: Number Systems
 
-1\. Completeness and the Real Numbers
+1\. Sets and Functions
 
-&nbsp;&nbsp;1.1. The Real Numbers<br>
+&nbsp;&nbsp;1.1. Sets<br>
 &nbsp;&nbsp;&nbsp;&nbsp;1.1.1. *[Natural numbers and integers](../D/natural-numbers)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.2. *[Absolute value](../D/absolute-value)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.3. *[Neighborhood](../D/neighborhood)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.4. *[Ordered field](../D/ordered-field)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.5. *[Upper bound and supremum](../D/supremum)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.6. *[Infimum and greatest lower bound](../D/infimum)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.7. **[Completeness axiom](../T/completeness-axiom)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.8. **[Infimum property](../T/infimum-property)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.9. **[Archimedean property](../T/archimedean)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.10. **[Density of the rationals](../T/density-rationals)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.11. **[Existence of square roots](../T/sqrt-existence)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.12. **[Nested interval property](../T/nested-interval)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.2. *[Sets](../D/set)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.3. *[Subset and set equality](../D/subset)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.4. *[Power set](../D/power-set)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.5. *[Union and intersection](../D/union-intersection)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.6. *[Set difference and complement](../D/set-difference)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.7. *[Indexed family of sets](../D/indexed-family)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.8. **[De Morgan's laws](../T/de-morgan)**<br>
+
+2\. The Rational Numbers
+
+&nbsp;&nbsp;2.1. Algebraic Structure<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.1. *[Ordered field](../D/ordered-field)*<br>
+
+&nbsp;&nbsp;2.2. Absolute Value and Distance<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.1. *[Absolute value](../D/absolute-value)*<br>
+
+3\. Completeness and the Real Numbers
+
+&nbsp;&nbsp;3.1. The Real Numbers<br>
+&nbsp;&nbsp;&nbsp;&nbsp;3.1.1. *[Neighborhood](../D/neighborhood)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;3.1.2. *[Upper bound and supremum](../D/supremum)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;3.1.3. *[Infimum and greatest lower bound](../D/infimum)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;3.1.4. **[Completeness axiom](../T/completeness-axiom)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;3.1.5. **[Infimum property](../T/infimum-property)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;3.1.6. **[Archimedean property](../T/archimedean)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;3.1.7. **[Density of the rationals](../T/density-rationals)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;3.1.8. **[Existence of square roots](../T/sqrt-existence)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;3.1.9. **[Nested interval property](../T/nested-interval)**<br>
 
 ### Chapter II: Sequences and Series
 

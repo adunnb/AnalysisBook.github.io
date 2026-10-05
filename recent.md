@@ -6,6 +6,15 @@ title: "Recently Added"
 A running feed of new pages, newest first. *Definitions* are set in
 *italics* -- **Theorems** are printed in **bold**.
 
+**October 5, 2026**
+- *[Sets](D/set)*
+- *[Subset and Set Equality](D/subset)*
+- *[Power Set](D/power-set)*
+- *[Union and Intersection](D/union-intersection)*
+- *[Set Difference and Complement](D/set-difference)*
+- *[Indexed Family of Sets](D/indexed-family)*
+- **[De Morgan's Laws](T/de-morgan)**
+
 **June 21, 2026**
 - **[Characterization of Continuity via Open Sets](T/open-sets-continuity)**
 

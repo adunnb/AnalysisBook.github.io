@@ -4,7 +4,7 @@ title: "Completeness Axiom"
 chapter: "Completeness and the Real Numbers"
 ---
 
-**Axiom (Completeness of $\mathbb{R}$):** Every non-empty subset of $\mathbb{R}$ that is bounded above has a [least upper bound (supremum)](../D/supremum) in $\mathbb{R}$.
+**Axiom (Completeness of $\mathbb{R}$):** Every non-empty [subset](../D/subset) of $\mathbb{R}$ that is bounded above has a [least upper bound (supremum)](../D/supremum) in $\mathbb{R}$.
 
 This property is also called the **least upper bound property** of $\mathbb{R}$. It is what distinguishes $\mathbb{R}$ from $\mathbb{Q}$: the rational numbers are an [ordered field](../D/ordered-field) but fail to satisfy completeness.
 

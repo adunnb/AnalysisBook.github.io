@@ -1,7 +1,7 @@
 ---
 layout: definition
 title: "Natural Numbers and Integers"
-chapter: "Completeness and the Real Numbers"
+chapter: "Sets and Functions"
 ---
 
 **Definition:** The **natural numbers** are the set:
@@ -15,6 +15,8 @@ $$\mathbb{Z} = \{\ldots, -2, -1, 0, 1, 2, \ldots\}$$
 The **rational numbers** are the set of all fractions of integers:
 
 $$\mathbb{Q} = \left\{\frac{p}{q} : p, q \in \mathbb{Z},\ q \neq 0\right\}$$
+
+We also write $\mathbb{N}_0 = \mathbb{N} \cup \{0\}$ for the natural numbers together with zero.
 
 These sets satisfy $\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R}$.
 

@@ -1,7 +1,7 @@
 ---
 layout: definition
 title: "Absolute Value"
-chapter: "Completeness and the Real Numbers"
+chapter: "The Rational Numbers"
 ---
 
 **Definition:** The **absolute value** of a real number $x \in \mathbb{R}$ is defined as:
