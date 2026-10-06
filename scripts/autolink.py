@@ -15,14 +15,23 @@ Matching is case-insensitive, whole-word, and also accepts plurals
 Dry run by default: prints each proposed change. Pass --write to apply.
 
 Never touched: front matter, math ($...$, $$...$$, \\(...\\), \\[...\\]),
-inline code, existing links, HTML tags, headings, and the target page itself.
+inline code, existing links, **bold text** (where pages define their own
+terms), HTML tags, headings, and the target page itself.
 Files that already link to the target are skipped, and only the first
 mention in each file is linked unless --all is given.
+
+The first mention in the main text (definition, statement, proof) is
+preferred. Links in **Remark:**, **Example(s):** and **Intuition:**
+paragraphs are "see also" links that don't count as dependencies (see
+scripts/check.py), so a Remark is linked only when the term appears
+nowhere else; the dry run marks those "(see also)".
 """
 import argparse
 import re
 import sys
 from pathlib import Path
+
+from check import paragraphs
 
 ROOT = Path(__file__).resolve().parent.parent
 SEARCH_DIRS = ["D", "T"]
@@ -36,6 +45,7 @@ PROTECTED = re.compile(
     | \\\[.*?\\\]                 # \[ ... \]
     | `[^`]*`                     # inline code
     | !?\[[^\]]*\]\([^)]*\)       # markdown links / images
+    | \*\*[^*\n]+\*\*             # bold: where a page defines its own terms
     | <a\b.*?</a>                 # html anchors
     | <[^>]+>                     # any other html tag
     | ^\#.*$                      # headings
@@ -71,39 +81,50 @@ def term_pattern(terms):
     return re.compile(rf"(?<![\w-])(?:{body})(?:s|es)?(?![\w-])", re.IGNORECASE)
 
 
-def link_file(text, pattern, url, link_all):
-    """Return (new_text, list_of_matched_strings)."""
+def link_file(text, pattern, url, link_all, main_only=False):
+    """Return (new_text, [(position_in_new_text, in_aside), ...])."""
     fm = read_front_matter(text)
     body = text[len(fm):]
 
-    out, hits, pos = [], [], 0
-    segments = []
+    asides, pos = [], 0
+    for para, aside in paragraphs(body):
+        if aside:
+            asides.append((pos, pos + len(para)))
+        pos += len(para)
+
+    def in_aside(i):
+        return any(a <= i < b for a, b in asides)
+
+    editable, pos = [], 0
     for m in PROTECTED.finditer(body):
-        segments.append((body[pos:m.start()], True))
-        segments.append((m.group(0), False))
+        editable.append((pos, m.start()))
         pos = m.end()
-    segments.append((body[pos:], True))
+    editable.append((pos, len(body)))
+    matches = [m for a, b in editable for m in pattern.finditer(body, a, b)]
 
-    for seg, editable in segments:
-        if not editable or (hits and not link_all):
-            out.append(seg)
-            continue
+    if link_all:
+        chosen = matches
+    else:
+        main = [m for m in matches if not in_aside(m.start())]
+        chosen = (main if main_only else main or matches)[:1]
 
-        def repl(m):
-            if hits and not link_all:
-                return m.group(0)
-            hits.append(m.group(0))
-            return f"[{m.group(0)}]({url})"
-
-        out.append(pattern.sub(repl, seg))
-
+    out, last, hits, size = [], 0, [], len(fm)
+    for m in chosen:
+        out.append(body[last:m.start()])
+        size += m.start() - last
+        hits.append((size, in_aside(m.start())))
+        link = f"[{m.group(0)}]({url})"
+        out.append(link)
+        size += len(link)
+        last = m.end()
+    out.append(body[last:])
     return fm + "".join(out), hits
 
 
-def context(text, needle, width=60):
-    i = text.find(needle)
-    s = text[max(0, i - width): i + len(needle) + width].replace("\n", " ")
-    return s
+def context(text, i, width=60):
+    """The new link at position i, with some text either side."""
+    end = text.index(")", i) + 1
+    return text[max(0, i - width): end + width].replace("\n", " ")
 
 
 def main():
@@ -139,15 +160,22 @@ def main():
             if path == target_file or path.resolve() in excluded:
                 continue
             text = path.read_text()
-            if already_linked.search(text) and not args.all:
+            # Skip files that already depend on the target. A file that only
+            # links it from a Remark/Example/Intuition still gets a main-text
+            # link if the term appears there, but no second see-also link.
+            linked_in = {aside for para, aside in paragraphs(text)
+                         if already_linked.search(para)}
+            if False in linked_in and not args.all:
                 continue
-            new_text, hits = link_file(text, pattern, url, args.all)
+            new_text, hits = link_file(text, pattern, url, args.all,
+                                       main_only=True in linked_in)
             if not hits:
                 continue
             changed += 1
             rel = path.relative_to(ROOT)
-            for h in hits:
-                print(f"  {rel}: ...{context(new_text, f'[{h}]({url})')}...")
+            for i, aside in hits:
+                note = "  (see also)" if aside else ""
+                print(f"  {rel}: ...{context(new_text, i)}...{note}")
             if args.write:
                 path.write_text(new_text)
 

@@ -1,0 +1,60 @@
+{%- comment -%}
+  "Uses" and "Used in" lists for a definition or theorem page, built from
+  the internal links in page content. Definitions in italics, theorems in bold.
+
+  Links here are written with site.baseurl rather than "../" so that
+  out-links.html never mistakes them for links in the page body.
+{%- endcomment -%}
+
+{%- include out-links.html content=page.content self=page.path ignore=page.ignore_edges -%}
+{%- assign _uses = "" | split: "" -%}
+{%- for _id in out_links -%}
+  {%- assign _file = _id | append: ".md" -%}
+  {%- assign _p = site.pages | where: "path", _file | first -%}
+  {%- if _p -%}{%- assign _uses = _uses | push: _p -%}{%- endif -%}
+{%- endfor -%}
+
+{%- assign _self = page.path | remove: ".md" -%}
+{%- assign _used_in = "" | split: "" -%}
+{%- for _p in site.pages -%}
+  {%- assign _dir = _p.path | slice: 0, 2 -%}
+  {%- if _dir == "D/" or _dir == "T/" -%}
+    {%- if _p.path != page.path -%}
+      {%- include out-links.html content=_p.content self=_p.path ignore=_p.ignore_edges -%}
+      {%- if out_links contains _self -%}
+        {%- assign _used_in = _used_in | push: _p -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign _used_in = _used_in | sort: "title" -%}
+
+{%- if _uses.size > 0 or _used_in.size > 0 -%}
+<div class="page-connections">
+  {%- if _uses.size > 0 %}
+  <p><b>Uses:</b>
+    {% for _p in _uses -%}
+      {%- capture _link %}<a href="{{ site.baseurl }}/{{ _p.path | remove: '.md' }}">{{ _p.title }}</a>{% endcapture -%}
+      {%- if _p.layout == "definition" %}<i>{{ _link }}</i>{% else %}<b>{{ _link }}</b>{% endif -%}
+      {%- unless forloop.last %}, {% endunless -%}
+    {%- endfor %}
+  </p>
+  {%- endif %}
+  {%- if _used_in.size > 0 %}
+  <p><b>Used in:</b>
+    {% for _p in _used_in -%}
+      {%- capture _link %}<a href="{{ site.baseurl }}/{{ _p.path | remove: '.md' }}">{{ _p.title }}</a>{% endcapture -%}
+      {%- if _p.layout == "definition" %}<i>{{ _link }}</i>{% else %}<b>{{ _link }}</b>{% endif -%}
+      {%- unless forloop.last %}, {% endunless -%}
+    {%- endfor %}
+  </p>
+  {%- endif %}
+  <details class="book-graph" data-book-graph="page"
+           data-graph-url="{{ '/graph.json' | relative_url }}"
+           data-full-url="{{ '/graph' | relative_url }}" data-focus="{{ _self }}">
+    <summary>Prerequisite graph</summary>
+    <div class="book-graph-body"></div>
+  </details>
+  <script src="{{ '/assets/js/graph.js' | relative_url }}" defer></script>
+</div>
+{%- endif -%}

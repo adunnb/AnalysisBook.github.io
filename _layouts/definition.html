@@ -20,6 +20,9 @@ layout: default
 	<!-- Definition -->
 	{{ content }}
 	
+	<!-- Uses / Used in -->
+	{% include connections.html %}
+	
 	<!-- Sources -->
 	{% if page.sources %}
 	  <b>Sources:</b> <br><ul>

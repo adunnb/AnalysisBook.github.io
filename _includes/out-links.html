@@ -1,0 +1,58 @@
+{%- comment -%}
+  Collects the D/ and T/ pages a page depends on, in order of first
+  appearance, without duplicates or self-links. Two kinds of link are
+  left out:
+
+  - links in **Remark:**, **Example(s):** and **Intuition:** paragraphs,
+    which are "see also" links rather than dependencies. Such a paragraph
+    starts a see-also stretch; any other bold label (**Proof:**,
+    **Step 1:**, ...) ends it, and unlabeled paragraphs (lists, display
+    math) continue whichever is current;
+  - targets listed in the page's `ignore_edges` front matter, for the rare
+    non-dependency link outside those paragraphs.
+
+  scripts/check.py applies the same rules; keep the two in step.
+
+  Usage: {% include out-links.html content=p.content self=p.path ignore=p.ignore_edges %}
+  Result: the array `out_links`, e.g. ["D/set", "T/de-morgan"]
+
+  Works on both raw markdown ("**Remark:**", "](../D/set)") and rendered
+  HTML ("<p><strong>Remark:</strong>", 'href="../D/set"'), since
+  site.pages may hold either during a build; both separate paragraphs
+  with a blank line. Variables are prefixed _ol_ because includes share
+  the caller's scope.
+{%- endcomment -%}
+{%- capture _ol_blank_line %}
+
+{% endcapture -%}
+{%- assign out_links = "" | split: "" -%}
+{%- assign _ol_self = include.self | remove: ".md" -%}
+{%- assign _ol_aside = false -%}
+{%- assign _ol_paras = include.content | split: _ol_blank_line -%}
+{%- for _ol_para in _ol_paras -%}
+  {%- assign _ol_head = _ol_para | strip | slice: 0, 40 | remove_first: "<p>" | replace_first: "<strong>", "**" -%}
+  {%- assign _ol_mark = _ol_head | slice: 0, 2 -%}
+  {%- if _ol_mark == "**" -%}
+    {%- assign _ol_r = _ol_head | slice: 2, 6 -%}
+    {%- assign _ol_e = _ol_head | slice: 2, 7 -%}
+    {%- assign _ol_i = _ol_head | slice: 2, 9 -%}
+    {%- if _ol_r == "Remark" or _ol_e == "Example" or _ol_i == "Intuition" -%}
+      {%- assign _ol_aside = true -%}
+    {%- else -%}
+      {%- assign _ol_aside = false -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- unless _ol_aside -%}
+    {%- assign _ol_parts = _ol_para | split: "../" -%}
+    {%- for _ol_part in _ol_parts offset: 1 -%}
+      {%- assign _ol_dir = _ol_part | slice: 0, 2 -%}
+      {%- if _ol_dir == "D/" or _ol_dir == "T/" -%}
+        {%- assign _ol_target = _ol_part | split: ")" | first | split: '"' | first | split: "#" | first | remove: ".md" | remove: ".html" | strip -%}
+        {%- unless _ol_target == _ol_self or include.ignore contains _ol_target -%}
+          {%- assign out_links = out_links | push: _ol_target -%}
+        {%- endunless -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endunless -%}
+{%- endfor -%}
+{%- assign out_links = out_links | uniq -%}

@@ -1,0 +1,39 @@
+---
+layout: null
+permalink: /graph.json
+---
+{%- comment -%}
+  Dependency graph of the book, rebuilt by Jekyll on every build.
+  Nodes are D/ and T/ pages; an edge source -> target means the source
+  page links to the target page (i.e. uses it).
+{%- endcomment -%}
+{%- assign _nodes = "" | split: "" -%}
+{%- for _p in site.pages -%}
+  {%- assign _dir = _p.path | slice: 0, 2 -%}
+  {%- if _dir == "D/" or _dir == "T/" -%}
+    {%- assign _nodes = _nodes | push: _p -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign _nodes = _nodes | sort: "path" -%}
+{
+  "nodes": [
+{%- for _p in _nodes %}
+    {"id": {{ _p.path | remove: ".md" | jsonify }}, "title": {{ _p.title | jsonify }}, "kind": {% if _p.layout == "definition" %}"definition"{% else %}"theorem"{% endif %}, "chapter": {{ _p.chapter | jsonify }}, "url": {{ _p.path | remove: ".md" | prepend: "/" | prepend: site.baseurl | jsonify }}}{% unless forloop.last %},{% endunless %}
+{%- endfor %}
+  ],
+  "edges": [
+{%- assign _first = true -%}
+{%- for _p in _nodes -%}
+  {%- include out-links.html content=_p.content self=_p.path ignore=_p.ignore_edges -%}
+  {%- for _target in out_links -%}
+    {%- assign _file = _target | append: ".md" -%}
+    {%- assign _exists = site.pages | where: "path", _file | first -%}
+    {%- if _exists -%}
+      {%- unless _first %},{% endunless %}
+    {"source": {{ _p.path | remove: ".md" | jsonify }}, "target": {{ _target | jsonify }}}
+      {%- assign _first = false -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endfor %}
+  ]
+}
