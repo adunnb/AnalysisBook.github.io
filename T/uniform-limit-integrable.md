@@ -8,7 +8,7 @@ chapter: "Sequences of Functions"
 
 $$\int_a^b f = \lim_{n \to \infty} \int_a^b f_n$$
 
-**Remark:** This theorem says that uniform convergence allows us to interchange the limit and the integral. This interchange fails in general for pointwise convergence.
+**Remark:** This theorem says that uniform convergence allows us to interchange the limit and the integral. This interchange fails in general for [pointwise convergence](../D/pointwise-convergence).
 
 **Proof:** Let $\varepsilon > 0$. Since $f_n \to f$ uniformly, there exists $N$ such that for all $x \in [a,b]$:
 
@@ -18,7 +18,7 @@ $$n > N \implies \lvert f_n(x) - f(x) \rvert < \frac{\varepsilon}{2(b-a)}$$
 
 $$\sup f - \inf f \leq \sup f_n - \inf f_n + \frac{\varepsilon}{b-a}$$
 
-Since $f_n \in \mathcal{R}[a,b]$, by the [integrability criterion](../T/integrability-criterion) there exists a partition $P$ with $U(f_n, P) - L(f_n, P) < \frac{\varepsilon}{2}$. Then:
+Since $f_n \in \mathcal{R}[a,b]$, by the [integrability criterion](../T/integrability-criterion) there exists a [partition](../D/partition) $P$ with $U(f_n, P) - L(f_n, P) < \frac{\varepsilon}{2}$. Then:
 
 $$U(f, P) - L(f, P) \leq U(f_n, P) - L(f_n, P) + \frac{\varepsilon}{b-a}(b-a) < \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon$$
 

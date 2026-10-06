@@ -16,4 +16,4 @@ chapter: "Limits and Continuity"
 
 **($\Leftarrow$) Closed and bounded implies compact.**
 
-Let $K$ be closed and bounded, and let $(a_n)$ be a sequence in $K$. Since $K$ is bounded, $(a_n)$ is a bounded sequence. By [Bolzano-Weierstrass](../T/bolzano-weierstrass), $(a_n)$ has a convergent subsequence $a_{n_k} \to L$. Since $K$ is closed and $a_{n_k} \in K$ for all $k$, we have $L \in K$. Therefore every sequence in $K$ has a subsequence converging to a limit in $K$, so $K$ is compact.
+Let $K$ be closed and bounded, and let $(a_n)$ be a sequence in $K$. Since $K$ is bounded, $(a_n)$ is a [bounded sequence](../D/bounded-sequence). By [Bolzano-Weierstrass](../T/bolzano-weierstrass), $(a_n)$ has a convergent subsequence $a_{n_k} \to L$. Since $K$ is closed and $a_{n_k} \in K$ for all $k$, we have $L \in K$. Therefore every sequence in $K$ has a subsequence converging to a limit in $K$, so $K$ is compact.

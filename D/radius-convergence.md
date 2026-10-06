@@ -12,4 +12,4 @@ with the conventions $\frac{1}{0} = \infty$ and $\frac{1}{\infty} = 0$.
 
 The power series [converges absolutely](../T/absolute-convergence) for all $x$ with $\lvert x - a \rvert < R$ and diverges for all $x$ with $\lvert x - a \rvert > R$. The set $(a - R, a + R)$ is called the **interval of convergence**.
 
-**Remark:** The behavior of the power series at the endpoints $x = a \pm R$ must be checked separately for each series and is not determined by $R$ alone. When $R = \infty$ the series converges for all $x \in \mathbb{R}$.
+**Remark:** The behavior of the power series at the endpoints $x = a \pm R$ must be checked separately for each series and is not determined by $R$ alone. When $R = \infty$ the [series converges](../D/convergence-series) for all $x \in \mathbb{R}$.

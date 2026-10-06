@@ -4,7 +4,7 @@ title: "Integral Test"
 chapter: "Sequences and Series"
 ---
 
-**Theorem:** Let $f : [1, \infty) \to \mathbb{R}$ be a positive, continuous, and decreasing function with $f(n) = a_n$ for all $n \in \mathbb{N}$. Then:
+**Theorem:** Let $f : [1, \infty) \to \mathbb{R}$ be a positive, [continuous](../D/continuity), and decreasing function with $f(n) = a_n$ for all $n \in \mathbb{N}$. Then:
 
 $$\sum_{n=1}^{\infty} a_n \text{ converges} \iff \int_1^{\infty} f(x)\, dx \text{ converges}$$
 
@@ -22,4 +22,4 @@ $$\sum_{n=2}^{N+1} a_n \leq \int_1^{N+1} f(x)\, dx \leq \sum_{n=1}^{N} a_n$$
 
 **($\Rightarrow$)** If $\sum a_n$ converges, the right inequality shows $\int_1^{N+1} f \leq \sum_{n=1}^{\infty} a_n < \infty$ for all $N$, so the integral converges.
 
-**($\Leftarrow$)** If $\int_1^{\infty} f$ converges, the left inequality shows $\sum_{n=2}^{N+1} a_n \leq \int_1^{\infty} f < \infty$ for all $N$, so the [partial sums](../D/partial-sums) are bounded. Since $a_n > 0$, the series converges by the [monotone convergence theorem](../T/monotone-convergence).
+**($\Leftarrow$)** If $\int_1^{\infty} f$ converges, the left inequality shows $\sum_{n=2}^{N+1} a_n \leq \int_1^{\infty} f < \infty$ for all $N$, so the [partial sums](../D/partial-sums) are bounded. Since $a_n > 0$, the [series converges](../D/convergence-series) by the [monotone convergence theorem](../T/monotone-convergence).

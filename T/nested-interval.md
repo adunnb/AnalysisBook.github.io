@@ -12,7 +12,7 @@ Then the [intersection](../D/union-intersection) $\bigcap_{n=1}^{\infty} I_n$ is
 
 **Remark:** This theorem is a direct consequence of the [completeness axiom](../T/completeness-axiom) and fails for open intervals. For example, the open intervals $\left(0, \frac{1}{n}\right)$ are nested but their intersection is empty.
 
-**Proof:** Since the intervals are nested, we have $a_n \leq a_{n+1}$ and $b_{n+1} \leq b_n$ for all $n$. In particular $a_n \leq b_n$ for all $n$, so every $b_n$ is an upper bound for the set $A = \{a_n : n \in \mathbb{N}\}$.
+**Proof:** Since the intervals are nested, we have $a_n \leq a_{n+1}$ and $b_{n+1} \leq b_n$ for all $n$. In particular $a_n \leq b_n$ for all $n$, so every $b_n$ is an [upper bound](../D/supremum) for the set $A = \{a_n : n \in \mathbb{N}\}$.
 
 Since $A$ is non-empty and bounded above, the [completeness axiom](../T/completeness-axiom) guarantees $x = \sup A$ exists. We claim $x \in I_n$ for all $n$, i.e. $a_n \leq x \leq b_n$.
 

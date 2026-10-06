@@ -12,7 +12,7 @@ If $\displaystyle\lim_{x \to a^+} \frac{f'(x)}{g'(x)} = L$, then $\displaystyle\
 
 **Remark:** The theorem also holds for the $\frac{\infty}{\infty}$ indeterminate form, for two-sided limits, and as $x \to \infty$. We state and prove only the $\frac{0}{0}$ one-sided case here.
 
-**Proof:** Extend $f$ and $g$ to $[a, b)$ by setting $f(a) = g(a) = 0$. Then $f$ and $g$ are continuous on $[a, x]$ and differentiable on $(a, x)$ for any $x \in (a, b)$.
+**Proof:** Extend $f$ and $g$ to $[a, b)$ by setting $f(a) = g(a) = 0$. Then $f$ and $g$ are [continuous](../D/continuity) on $[a, x]$ and differentiable on $(a, x)$ for any $x \in (a, b)$.
 
 By the [generalized mean value theorem](../T/generalized-mean-value), there exists $c \in (a, x)$ such that:
 

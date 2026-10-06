@@ -6,7 +6,7 @@ chapter: "Sequences and Series"
 
 **Definition:** A series $\sum_{n=1}^{\infty} a_n$ **converges absolutely** if $\sum_{n=1}^{\infty} \lvert a_n \rvert$ converges.
 
-**Theorem:** If a series converges absolutely, then it converges.
+**Theorem:** If a [series converges](../D/convergence-series) absolutely, then it converges.
 
 **Proof:** Suppose $\sum \lvert a_n \rvert$ converges. Let $\varepsilon > 0$. By the [Cauchy criterion for series](../T/series-cauchy), there exists $N \in \mathbb{N}$ such that for all $m > n > N$:
 

@@ -17,6 +17,6 @@ $$\{x \in A : P(x)\}$$
 
 read "the set of all $x$ in $A$ such that $P(x)$."
 
-**Example:** $\{a \in \mathbb{Z} : 2 \nmid a\}$ is the set of odd integers, and $\{x \in \mathbb{R} : x^2 < 4\} = (-2, 2)$.
+**Example:** $\{a \in \mathbb{Z} : 2 \nmid a\}$ is the set of odd [integers](../D/natural-numbers), and $\{x \in \mathbb{R} : x^2 < 4\} = (-2, 2)$.
 
 **Remark:** In this book a set is treated as a basic, undefined notion. Some care is needed, however: not every collection of objects can be a set. In particular, there is no "set of all sets."

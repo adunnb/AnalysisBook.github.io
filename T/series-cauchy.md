@@ -12,7 +12,7 @@ $$m > n > N \implies \lvert a_{n+1} + a_{n+2} + \cdots + a_m \rvert < \varepsilo
 
 **Corollary:** If $\sum_{n=1}^{\infty} a_n$ converges, then $a_n \to 0$. The converse is false — the harmonic series $\sum \frac{1}{n}$ diverges despite $\frac{1}{n} \to 0$.
 
-**Proof:** The series $\sum a_n$ converges if and only if its sequence of partial sums $(s_n)$ converges. By the [Cauchy criterion for convergence](../T/cauchy-criterion), $(s_n)$ converges if and only if it is a [Cauchy sequence](../D/cauchy-sequence), i.e. for every $\varepsilon > 0$ there exists $N$ such that:
+**Proof:** The series $\sum a_n$ converges if and only if its sequence of [partial sums](../D/partial-sums) $(s_n)$ converges. By the [Cauchy criterion for convergence](../T/cauchy-criterion), $(s_n)$ converges if and only if it is a [Cauchy sequence](../D/cauchy-sequence), i.e. for every $\varepsilon > 0$ there exists $N$ such that:
 
 $$m > n > N \implies \lvert s_m - s_n \rvert < \varepsilon$$
 

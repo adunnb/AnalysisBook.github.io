@@ -20,9 +20,9 @@ $$\ln(1+x) = \sum_{n=1}^{\infty} \frac{(-1)^{n+1} x^n}{n} = x - \frac{x^2}{2} + 
 
 $$R_n(x) = \frac{e^\xi}{(n+1)!} x^{n+1}$$
 
-for some $\xi$ between $0$ and $x$. For any fixed $x$, $e^\xi$ is bounded by $e^{\lvert x \rvert}$, and $\frac{\lvert x \rvert^{n+1}}{(n+1)!} \to 0$ since the exponential series converges. By [convergence of Taylor series](../T/taylor-series-convergence), $e^x = \sum \frac{x^n}{n!}$.
+for some $\xi$ between $0$ and $x$. For any fixed $x$, $e^\xi$ is bounded by $e^{\lvert x \rvert}$, and $\frac{\lvert x \rvert^{n+1}}{(n+1)!} \to 0$ since the exponential [series converges](../D/convergence-series). By [convergence of Taylor series](../T/taylor-series-convergence), $e^x = \sum \frac{x^n}{n!}$.
 
-**Proof for $\sin x$:** Let $f(x) = \sin x$. The derivatives cycle: $\sin x, \cos x, -\sin x, -\cos x, \ldots$ with $f^{(2n)}(0) = 0$ and $f^{(2n+1)}(0) = (-1)^n$. The remainder satisfies $\lvert R_n(x) \rvert \leq \frac{\lvert x \rvert^{n+1}}{(n+1)!} \to 0$, so the series converges to $\sin x$.
+**Proof for $\sin x$:** Let $f(x) = \sin x$. The [derivatives](../D/derivative) cycle: $\sin x, \cos x, -\sin x, -\cos x, \ldots$ with $f^{(2n)}(0) = 0$ and $f^{(2n+1)}(0) = (-1)^n$. The remainder satisfies $\lvert R_n(x) \rvert \leq \frac{\lvert x \rvert^{n+1}}{(n+1)!} \to 0$, so the series converges to $\sin x$.
 
 **Proof for $\cos x$:** Analogous to $\sin x$ with $f^{(2n)}(0) = (-1)^n$ and $f^{(2n+1)}(0) = 0$.
 

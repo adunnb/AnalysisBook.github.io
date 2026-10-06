@@ -10,7 +10,7 @@ $$\int_a^b f = G(b) - G(a)$$
 
 **Remark:** This theorem provides the practical tool for evaluating integrals. While FTC I establishes the theoretical connection between differentiation and integration, FTC II gives the computational method: find an antiderivative and evaluate at the endpoints.
 
-**Proof:** Let $\varepsilon > 0$. By the [integrability criterion](../T/integrability-criterion), there exists a partition $P = \{x_0, x_1, \ldots, x_n\}$ of $[a,b]$ such that $U(f,P) - L(f,P) < \varepsilon$.
+**Proof:** Let $\varepsilon > 0$. By the [integrability criterion](../T/integrability-criterion), there exists a [partition](../D/partition) $P = \{x_0, x_1, \ldots, x_n\}$ of $[a,b]$ such that $U(f,P) - L(f,P) < \varepsilon$.
 
 By the [mean value theorem](../T/mean-value), on each subinterval $[x_{k-1}, x_k]$ there exists $t_k \in (x_{k-1}, x_k)$ such that:
 

@@ -6,13 +6,13 @@ chapter: "Completeness and the Real Numbers"
 
 **Theorem:** 
 
-(i) For every real number $x \in \mathbb{R}$, there exists a natural number $n \in \mathbb{N}$ such that $n > x$.
+(i) For every real number $x \in \mathbb{R}$, there exists a [natural number](../D/natural-numbers) $n \in \mathbb{N}$ such that $n > x$.
 
 (ii) For every real number $y > 0$, there exists $n \in \mathbb{N}$ such that $\frac{1}{n} < y$.
 
 **Remark:** The Archimedean property is not unique to $\mathbb{R}$. The rational numbers $\mathbb{Q}$ have a similar Archimedean property: for every $q \in \mathbb{Q}$, there exists an integer $n \in \mathbb{Z}$ with $n > q$.
 
-**Proof of (i):** Suppose for contradiction that no such $n$ exists. Then $x$ is an upper bound for $\mathbb{N}$. Since $\mathbb{N}$ is non-empty and bounded above, the [completeness axiom](../T/completeness-axiom) guarantees that $\alpha = \sup \mathbb{N}$ exists.
+**Proof of (i):** Suppose for contradiction that no such $n$ exists. Then $x$ is an [upper bound](../D/supremum) for $\mathbb{N}$. Since $\mathbb{N}$ is non-empty and bounded above, the [completeness axiom](../T/completeness-axiom) guarantees that $\alpha = \sup \mathbb{N}$ exists.
 
 Since $\alpha$ is the least upper bound, $\alpha - 1$ is not an upper bound of $\mathbb{N}$. So there exists some $n_0 \in \mathbb{N}$ with $n_0 > \alpha - 1$, which gives:
 

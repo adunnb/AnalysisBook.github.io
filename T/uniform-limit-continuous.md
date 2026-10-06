@@ -6,7 +6,7 @@ chapter: "Sequences of Functions"
 
 **Theorem:** Let $(f_n)$ be a sequence of [continuous](../D/continuity) functions $f_n : A \to \mathbb{R}$. If $f_n \to f$ [uniformly](../D/uniform-convergence) on $A$, then $f$ is continuous on $A$.
 
-**Remark:** This theorem fails for pointwise convergence, as shown by the example $f_n(x) = x^n$ on $[0,1]$ in the definition of [uniform convergence](../D/uniform-convergence). Uniform convergence is precisely the condition needed to guarantee that the limit of continuous functions is continuous.
+**Remark:** This theorem fails for [pointwise convergence](../D/pointwise-convergence), as shown by the example $f_n(x) = x^n$ on $[0,1]$ in the definition of [uniform convergence](../D/uniform-convergence). Uniform convergence is precisely the condition needed to guarantee that the limit of continuous functions is continuous.
 
 **Proof:** Let $c \in A$ and $\varepsilon > 0$. Since $f_n \to f$ uniformly, there exists $N$ such that for all $x \in A$:
 

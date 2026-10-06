@@ -26,7 +26,7 @@ $$\lvert a_n \rvert \leq \lvert a_{N+1} \rvert + 1 \quad \text{for all } n > N$$
 
 Setting $M = \max(\lvert a_1 \rvert, \ldots, \lvert a_N \rvert, \lvert a_{N+1} \rvert + 1)$ gives $\lvert a_n \rvert \leq M$ for all $n$.
 
-**Step 2: $(a_n)$ converges.** Since $(a_n)$ is bounded, by the [Bolzano–Weierstrass theorem](../T/bolzano-weierstrass) it has a convergent subsequence $(a_{n_k}) \to L$. We claim $a_n \to L$.
+**Step 2: $(a_n)$ converges.** Since $(a_n)$ is bounded, by the [Bolzano–Weierstrass theorem](../T/bolzano-weierstrass) it has a convergent [subsequence](../D/subsequence) $(a_{n_k}) \to L$. We claim $a_n \to L$.
 
 Let $\varepsilon > 0$. Since $(a_n)$ is Cauchy, there exists $N_1$ such that:
 

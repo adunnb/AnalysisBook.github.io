@@ -6,7 +6,7 @@ chapter: "Sequences and Series"
 
 **Theorem:** The real numbers $\mathbb{R}$ are **complete** in the sense that every [Cauchy sequence](../D/cauchy-sequence) in $\mathbb{R}$ converges to a limit in $\mathbb{R}$.
 
-**Remark:** This theorem is an equivalent formulation of the [completeness axiom](../T/completeness-axiom). It shows that completeness can be characterized entirely in terms of sequences, without reference to upper bounds or suprema. This sequential characterization of completeness can be more convenient to use in practice.
+**Remark:** This theorem is an equivalent formulation of the [completeness axiom](../T/completeness-axiom). It shows that completeness can be characterized entirely in terms of sequences, without reference to [upper bounds](../D/supremum) or suprema. This sequential characterization of completeness can be more convenient to use in practice.
 
 In contrast, the rational numbers $\mathbb{Q}$ are not complete in this sense. The sequence:
 

@@ -10,7 +10,7 @@ chapter: "Integration"
 
 $$\lvert x - y \rvert < \delta \implies \lvert f(x) - f(y) \rvert < \frac{\varepsilon}{b - a}$$
 
-Choose a [partition](../D/partition) $P = \{x_0, x_1, \ldots, x_n\}$ with mesh $\lVert P \rVert < \delta$. On each subinterval $[x_{k-1}, x_k]$, since $f$ is continuous it attains its supremum $M_k$ and infimum $m_k$ at some points $u_k, v_k \in [x_{k-1}, x_k]$. Since $\lvert u_k - v_k \rvert \leq \lVert P \rVert < \delta$:
+Choose a [partition](../D/partition) $P = \{x_0, x_1, \ldots, x_n\}$ with mesh $\lVert P \rVert < \delta$. On each subinterval $[x_{k-1}, x_k]$, since $f$ is continuous it attains its [supremum](../D/supremum) $M_k$ and [infimum](../D/infimum) $m_k$ at some points $u_k, v_k \in [x_{k-1}, x_k]$. Since $\lvert u_k - v_k \rvert \leq \lVert P \rVert < \delta$:
 
 $$M_k - m_k = f(u_k) - f(v_k) = \lvert f(u_k) - f(v_k) \rvert < \frac{\varepsilon}{b-a}$$
 

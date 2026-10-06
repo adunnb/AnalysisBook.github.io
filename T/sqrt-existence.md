@@ -14,7 +14,7 @@ $$A = \{t \in \mathbb{R} : t \geq 0 \text{ and } t^2 \leq x\}$$
 
 **Non-emptiness:** $0 \in A$ since $0^2 = 0 \leq x$.
 
-**Bounded above:** If $t \in A$ then $t^2 \leq x$, so $t \leq x + 1$ is an upper bound for $A$.
+**Bounded above:** If $t \in A$ then $t^2 \leq x$, so $t \leq x + 1$ is an [upper bound](../D/supremum) for $A$.
 
 By the [completeness axiom](../T/completeness-axiom), $y = \sup A$ exists. We claim $y^2 = x$ by ruling out $y^2 < x$ and $y^2 > x$.
 

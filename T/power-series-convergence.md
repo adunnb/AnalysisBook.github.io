@@ -6,7 +6,7 @@ chapter: "Sequences of Functions"
 
 **Theorem:** Let $\sum_{n=0}^{\infty} c_n(x-a)^n$ be a [power series](../D/power-series) with [radius of convergence](../D/radius-convergence) $R > 0$. Then the series converges [uniformly](../D/uniform-convergence) on every closed interval $[a-r, a+r]$ with $0 < r < R$.
 
-**Remark:** The convergence is uniform on compact [subsets](../D/subset) of the interval of convergence, but need not be uniform on the full open interval $(a-R, a+R)$.
+**Remark:** The convergence is uniform on [compact](../D/compact-set) [subsets](../D/subset) of the interval of convergence, but need not be uniform on the full open interval $(a-R, a+R)$.
 
 **Proof:** Without loss of generality take $a = 0$. Let $0 < r < R$ and choose $s$ with $r < s < R$. Since the series [converges absolutely](../T/absolute-convergence) at $x = s$, the terms $c_n s^n \to 0$ and in particular are bounded: there exists $M > 0$ with $\lvert c_n \rvert s^n \leq M$ for all $n$.
 

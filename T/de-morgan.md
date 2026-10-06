@@ -29,4 +29,4 @@ x \in A \setminus (B \cap C) &\iff x \in A \text{ and not both } x \in B,\ x \in
 &\iff x \in (A \setminus B) \cup (A \setminus C)
 \end{aligned}$$
 
-The complement forms follow by taking $A = U$.
+The [complement](../D/set-difference) forms follow by taking $A = U$.

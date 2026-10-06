@@ -30,6 +30,6 @@ $$(fg)'(c) = f(c)g'(c) + g(c)f'(c)$$
 
 **Proof of (iii):** This follows from (ii) by setting $g(x) = c$ for all $x$, giving $g'(c) = 0$.
 
-**Proof of (iv):** It suffices to show $\left(\frac{1}{g}\right)'(c) = -\frac{g'(c)}{g(c)^2}$, since the result then follows from (ii). Since $g(c) \neq 0$ and $g$ is continuous at $c$, there exists a neighborhood of $c$ on which $g$ is nonzero. Then:
+**Proof of (iv):** It suffices to show $\left(\frac{1}{g}\right)'(c) = -\frac{g'(c)}{g(c)^2}$, since the result then follows from (ii). Since $g(c) \neq 0$ and $g$ is continuous at $c$, there exists a [neighborhood](../D/neighborhood) of $c$ on which $g$ is nonzero. Then:
 
 $$\lim_{x \to c} \frac{\frac{1}{g(x)} - \frac{1}{g(c)}}{x - c} = \lim_{x \to c} \frac{g(c) - g(x)}{g(x)g(c)(x-c)} = \frac{-g'(c)}{g(c)^2}$$

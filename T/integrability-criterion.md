@@ -12,7 +12,7 @@ $$U(f, P) - L(f, P) < \varepsilon$$
 
 **Proof:**
 
-**($\Rightarrow$)** Suppose $f$ is Riemann integrable, so $U(f) = L(f)$. Let $\varepsilon > 0$. By the definitions of upper and lower integrals as infimum and supremum respectively, there exist partitions $P_1$ and $P_2$ such that:
+**($\Rightarrow$)** Suppose $f$ is Riemann integrable, so $U(f) = L(f)$. Let $\varepsilon > 0$. By the definitions of upper and lower integrals as [infimum](../D/infimum) and [supremum](../D/supremum) respectively, there exist partitions $P_1$ and $P_2$ such that:
 
 $$U(f, P_1) < U(f) + \frac{\varepsilon}{2}, \qquad L(f, P_2) > L(f) - \frac{\varepsilon}{2}$$
 

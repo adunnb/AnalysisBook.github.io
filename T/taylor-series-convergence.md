@@ -4,7 +4,7 @@ title: "Convergence of Taylor Series"
 chapter: "Sequences of Functions"
 ---
 
-**Theorem:** Let $f : A \to \mathbb{R}$ be infinitely differentiable at $c \in A$, and for $x \in A$ let $P_n(x) = \sum_{k=0}^{n} \frac{f^{(k)}(c)}{k!}(x-c)^k$ be the $n$-th order Taylor polynomial of $f$ centered at $c$, with [Lagrange remainder](../T/taylors-theorem) $R_n(x) = f(x) - P_n(x)$. Then the [Taylor series](../D/taylor-series) of $f$ at $c$ converges to $f(x)$ if and only if:
+**Theorem:** Let $f : A \to \mathbb{R}$ be infinitely [differentiable](../D/derivative) at $c \in A$, and for $x \in A$ let $P_n(x) = \sum_{k=0}^{n} \frac{f^{(k)}(c)}{k!}(x-c)^k$ be the $n$-th order Taylor polynomial of $f$ centered at $c$, with [Lagrange remainder](../T/taylors-theorem) $R_n(x) = f(x) - P_n(x)$. Then the [Taylor series](../D/taylor-series) of $f$ at $c$ converges to $f(x)$ if and only if:
 
 $$\lim_{n \to \infty} R_n(x) = 0$$
 

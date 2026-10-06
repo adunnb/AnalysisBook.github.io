@@ -14,7 +14,7 @@ chapter: "Limits and Continuity"
 
 $$\lvert y - x \rvert < \delta \implies \lvert f(y) - f(x) \rvert < \varepsilon$$
 
-That is, $f(V_\delta(x)) \subseteq V_\varepsilon(f(x)) \subseteq O$, so $V_\delta(x) \subseteq f^{-1}(O)$. Since $x \in f^{-1}(O)$ was arbitrary, every point of $f^{-1}(O)$ has a neighborhood contained in $f^{-1}(O)$, so $f^{-1}(O)$ is open.
+That is, $f(V_\delta(x)) \subseteq V_\varepsilon(f(x)) \subseteq O$, so $V_\delta(x) \subseteq f^{-1}(O)$. Since $x \in f^{-1}(O)$ was arbitrary, every point of $f^{-1}(O)$ has a [neighborhood](../D/neighborhood) contained in $f^{-1}(O)$, so $f^{-1}(O)$ is open.
 
 **($\Leftarrow$)** Suppose $f^{-1}(O)$ is open for every open set $O \subseteq \mathbb{R}$. Let $c \in \mathbb{R}$ and $\varepsilon > 0$. The set $V_\varepsilon(f(c))$ is open, so $f^{-1}(V_\varepsilon(f(c)))$ is open and contains $c$. Therefore there exists $\delta > 0$ such that $V_\delta(c) \subseteq f^{-1}(V_\varepsilon(f(c)))$, which means:
 

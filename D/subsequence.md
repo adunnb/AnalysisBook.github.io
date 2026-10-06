@@ -4,7 +4,7 @@ title: "Subsequence"
 chapter: "Sequences and Series"
 ---
 
-**Definition:** Let $(a_n)$ be a sequence. A **subsequence** of $(a_n)$ is a sequence of the form $(a_{n_k})$ where $n_1 < n_2 < n_3 < \cdots$ is a strictly increasing sequence of natural numbers.
+**Definition:** Let $(a_n)$ be a sequence. A **subsequence** of $(a_n)$ is a sequence of the form $(a_{n_k})$ where $n_1 < n_2 < n_3 < \cdots$ is a strictly increasing sequence of [natural numbers](../D/natural-numbers).
 
 **Intuition:** A subsequence is obtained by selecting an infinite collection of terms from the original sequence, in order, and discarding the rest.
 

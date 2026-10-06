@@ -20,7 +20,7 @@ Since $(a_n)$ is decreasing, each parenthesized term is non-negative, so $(s_{2n
 
 $$s_{2n} = a_1 - (a_2 - a_3) - \cdots - (a_{2n-2} - a_{2n-1}) - a_{2n} \leq a_1$$
 
-So $(s_{2n})$ is increasing and bounded above by $a_1$. By the [monotone convergence theorem](../T/monotone-convergence), $s_{2n} \to S$ for some $S \in \mathbb{R}$.
+So $(s_{2n})$ is increasing and [bounded above](../D/bounded-sequence) by $a_1$. By the [monotone convergence theorem](../T/monotone-convergence), $s_{2n} \to S$ for some $S \in \mathbb{R}$.
 
 For the odd partial sums: $s_{2n+1} = s_{2n} + a_{2n+1}$. Since $a_{2n+1} \to 0$:
 

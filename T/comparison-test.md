@@ -14,6 +14,6 @@ chapter: "Sequences and Series"
 
 $$s_n \leq t_n \leq \sum_{n=1}^{\infty} b_n$$
 
-So $(s_n)$ is increasing and bounded above, and by the [monotone convergence theorem](../T/monotone-convergence) it converges. Therefore $\sum a_n$ converges.
+So $(s_n)$ is increasing and [bounded above](../D/bounded-sequence), and by the [monotone convergence theorem](../T/monotone-convergence) it converges. Therefore $\sum a_n$ converges.
 
 **Proof of (ii):** This follows from (i) by contrapositive.

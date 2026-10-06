@@ -12,7 +12,7 @@ for every $L \in \mathbb{R}$.
 
 **Remark:** This is simply the negation of the [definition of convergence](../D/convergence-sequence). It is particularly useful for proving that specific sequences diverge without needing to know what limit they might converge to.
 
-**Proof:** This follows directly by negating the definition of convergence. A sequence $(a_n)$ converges to $L$ if:
+**Proof:** This follows directly by negating the [definition of convergence](../D/convergence-sequence). A sequence $(a_n)$ converges to $L$ if:
 
 $$\forall \varepsilon > 0, \ \exists N \in \mathbb{N} \text{ such that } n > N \implies \lvert a_n - L \rvert < \varepsilon$$
 

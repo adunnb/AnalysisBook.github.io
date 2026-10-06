@@ -12,7 +12,7 @@ chapter: "Limits and Continuity"
 
 $$A = \{x \in [a, b] : f(x) < L\}$$
 
-Then $A$ is non-empty since $a \in A$, and bounded above by $b$. By the [completeness axiom](../T/completeness-axiom), $c = \sup A$ exists.
+Then $A$ is non-empty since $a \in A$, and [bounded above](../D/supremum) by $b$. By the [completeness axiom](../T/completeness-axiom), $c = \sup A$ exists.
 
 We claim $f(c) = L$ by ruling out $f(c) < L$ and $f(c) > L$.
 

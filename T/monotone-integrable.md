@@ -12,7 +12,7 @@ Let $\varepsilon > 0$. Choose $n \in \mathbb{N}$ large enough so that:
 
 $$\frac{(f(b) - f(a))(b - a)}{n} < \varepsilon$$
 
-which is possible by the [Archimedean property](../T/archimedean). Let $P = \{x_0, x_1, \ldots, x_n\}$ be the uniform partition with $x_k = a + \frac{k(b-a)}{n}$. Since $f$ is increasing, on each subinterval $[x_{k-1}, x_k]$:
+which is possible by the [Archimedean property](../T/archimedean). Let $P = \{x_0, x_1, \ldots, x_n\}$ be the uniform [partition](../D/partition) with $x_k = a + \frac{k(b-a)}{n}$. Since $f$ is increasing, on each subinterval $[x_{k-1}, x_k]$:
 
 $$M_k = f(x_k), \qquad m_k = f(x_{k-1})$$
 

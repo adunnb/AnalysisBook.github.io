@@ -1,7 +1,7 @@
 ---
 layout: definition
 title: "Convergence of a Sequence"
-chapter: "Sequences"
+chapter: "Sequences and Series"
 ---
 
 **Definition:** A sequence $(a_n)$ of real numbers **converges** to a limit $L \in \mathbb{R}$ if:

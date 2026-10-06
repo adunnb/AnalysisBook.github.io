@@ -10,7 +10,7 @@ $$\int_a^b f = \int_a^c f + \int_c^b f$$
 
 **Proof:** Let $\varepsilon > 0$.
 
-**($\Rightarrow$)** Suppose $f \in \mathcal{R}[a,b]$. By the [integrability criterion](../T/integrability-criterion), there exists a partition $P$ of $[a,b]$ with $U(f,P) - L(f,P) < \varepsilon$. Refining $P$ to include $c$ if necessary, write $P = P_1 \cup P_2$ where $P_1$ is a partition of $[a,c]$ and $P_2$ of $[c,b]$. Then:
+**($\Rightarrow$)** Suppose $f \in \mathcal{R}[a,b]$. By the [integrability criterion](../T/integrability-criterion), there exists a [partition](../D/partition) $P$ of $[a,b]$ with $U(f,P) - L(f,P) < \varepsilon$. Refining $P$ to include $c$ if necessary, write $P = P_1 \cup P_2$ where $P_1$ is a partition of $[a,c]$ and $P_2$ of $[c,b]$. Then:
 
 $$U(f, P_1) - L(f, P_1) \leq U(f,P) - L(f,P) < \varepsilon$$
 

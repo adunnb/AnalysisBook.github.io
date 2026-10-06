@@ -12,7 +12,7 @@ chapter: "Integration"
 
 (iii) $\lvert f \rvert \in \mathcal{R}[a,b]$ and $\displaystyle\left\lvert \int_a^b f \right\rvert \leq \int_a^b \lvert f \rvert$.
 
-**Proof of (i):** If $f \geq 0$ then $m_k \geq 0$ for all subintervals, so $L(f, P) \geq 0$ for all partitions $P$. Therefore $\int_a^b f = L(f) \geq 0$.
+**Proof of (i):** If $f \geq 0$ then $m_k \geq 0$ for all subintervals, so $L(f, P) \geq 0$ for all [partitions](../D/partition) $P$. Therefore $\int_a^b f = L(f) \geq 0$.
 
 **Proof of (ii):** Apply (i) to $g - f \geq 0$ and use [linearity](../T/integral-linearity):
 
@@ -22,4 +22,4 @@ $$0 \leq \int_a^b (g - f) = \int_a^b g - \int_a^b f$$
 
 $$-\int_a^b \lvert f \rvert \leq \int_a^b f \leq \int_a^b \lvert f \rvert$$
 
-which gives $\left\lvert \int_a^b f \right\rvert \leq \int_a^b \lvert f \rvert$. The integrability of $\lvert f \rvert$ follows from the fact that $\bigl\lvert \lvert f(x) \rvert - \lvert f(y) \rvert \bigr\rvert \leq \lvert f(x) - f(y) \rvert$, so the oscillation of $\lvert f \rvert$ on any subinterval is bounded by that of $f$.
+which gives $\left\lvert \int_a^b f \right\rvert \leq \int_a^b \lvert f \rvert$. The [integrability](../D/riemann-integral) of $\lvert f \rvert$ follows from the fact that $\bigl\lvert \lvert f(x) \rvert - \lvert f(y) \rvert \bigr\rvert \leq \lvert f(x) - f(y) \rvert$, so the oscillation of $\lvert f \rvert$ on any subinterval is bounded by that of $f$.

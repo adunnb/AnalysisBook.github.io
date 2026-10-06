@@ -4,9 +4,9 @@ title: "Bolzano–Weierstrass Theorem"
 chapter: "Sequences and Series"
 ---
 
-**Theorem:** Every bounded sequence has a convergent subsequence.
+**Theorem:** Every [bounded sequence](../D/bounded-sequence) has a convergent subsequence.
 
-**Proof:** Let $(a_n)$ be a bounded sequence. We construct a monotone subsequence, which by the [monotone convergence theorem](../T/monotone-convergence) must converge.
+**Proof:** Let $(a_n)$ be a bounded sequence. We construct a [monotone](../D/monotone-sequence) subsequence, which by the [monotone convergence theorem](../T/monotone-convergence) must converge.
 
 Call an index $n \in \mathbb{N}$ a **peak** if $a_n \geq a_m$ for all $m > n$, i.e. $a_n$ is greater than or equal to all subsequent terms.
 

@@ -14,7 +14,7 @@ Taking $\delta = \frac{1}{n}$ for each $n \in \mathbb{N}$, we obtain sequences $
 
 $$\lvert x_n - y_n \rvert < \frac{1}{n} \quad \text{and} \quad \lvert f(x_n) - f(y_n) \rvert \geq \varepsilon_0$$
 
-Since $(x_n) \subseteq [a,b]$ is bounded, by [Bolzano–Weierstrass](../T/bolzano-weierstrass) there exists a subsequence $x_{n_k} \to c \in [a,b]$. Since $\lvert x_{n_k} - y_{n_k} \rvert < \frac{1}{n_k} \to 0$, we also have $y_{n_k} \to c$.
+Since $(x_n) \subseteq [a,b]$ is bounded, by [Bolzano–Weierstrass](../T/bolzano-weierstrass) there exists a [subsequence](../D/subsequence) $x_{n_k} \to c \in [a,b]$. Since $\lvert x_{n_k} - y_{n_k} \rvert < \frac{1}{n_k} \to 0$, we also have $y_{n_k} \to c$.
 
 Since $f$ is continuous at $c$:
 

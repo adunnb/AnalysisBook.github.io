@@ -2,6 +2,7 @@
 layout: definition
 title: "Partial Sums"
 chapter: "Sequences and Series"
+ignore_edges: ["D/convergence-series"]
 ---
 
 **Definition:** Given a sequence $(a_n)$, the $n$-th **partial sum** is:
