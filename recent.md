@@ -6,6 +6,10 @@ title: "Recently Added"
 A running feed of new pages, newest first. *Definitions* are set in
 *italics* -- **Theorems** are printed in **bold**.
 
+**October 7, 2026**
+- *[Cartesian Product](D/cartesian-product)*
+- **[Russell's Paradox](T/russell-paradox)**
+
 **October 5, 2026**
 - *[Sets](D/set)*
 - *[Subset and Set Equality](D/subset)*

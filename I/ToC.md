@@ -18,7 +18,9 @@ title: "Table of Contents"
 &nbsp;&nbsp;&nbsp;&nbsp;1.1.5. *[Union and intersection](../D/union-intersection)*<br>
 &nbsp;&nbsp;&nbsp;&nbsp;1.1.6. *[Set difference and complement](../D/set-difference)*<br>
 &nbsp;&nbsp;&nbsp;&nbsp;1.1.7. *[Indexed family of sets](../D/indexed-family)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.8. **[De Morgan's laws](../T/de-morgan)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.8. *[Cartesian product](../D/cartesian-product)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.9. **[De Morgan's laws](../T/de-morgan)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.10. **[Russell's paradox](../T/russell-paradox)**<br>
 
 2\. The Rational Numbers
 
