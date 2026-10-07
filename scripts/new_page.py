@@ -13,7 +13,7 @@ This will:
   2. add the page under today's date at the top of recent.md
 
 You still need to add the page to I/ToC.md by hand (its numbering is manual);
-scripts/check.py will remind you if you forget.
+scripts/check.py will remind you if you forget, and checks the numbering.
 """
 import argparse
 import datetime
@@ -104,13 +104,15 @@ def main():
         add_to_recent(style(f"[{args.title}]({args.kind}/{slug})"), datetime.date.today())
         print("Added to recent.md")
 
-    print("\nNext steps:")
-    print(f"  - write the page, then add it to I/ToC.md")
-    terms = " ".join(f'"{t}"' for t in args.terms) if args.terms else f'"{args.title.lower()}"'
-    print(f"  - link mentions elsewhere:  python3 scripts/autolink.py {args.kind}/{slug}"
-          + ("" if args.terms else f" {terms}"))
-    print("  - before pushing:           python3 scripts/check.py")
-
+    page = f"{args.kind}/{slug}"
+    terms = "" if args.terms else f' "{args.title.lower()}"'
+    print("\nNext steps (see README, \"Adding a page\"):")
+    print(f"  1. write the page, linking what it uses; find missed links with")
+    print(f"       python3 scripts/autolink.py --into {page}")
+    print(f"  2. add it to I/ToC.md (renumber the entries after it)")
+    print(f"  3. link to it from other pages:")
+    print(f"       python3 scripts/autolink.py {page}{terms}")
+    print(f"  4. python3 scripts/check.py")
 
 if __name__ == "__main__":
     main()

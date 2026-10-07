@@ -6,6 +6,8 @@
 Reports:
   - broken internal links (in D/, T/, I/ and the top-level pages)
   - D/ and T/ pages missing from the table of contents
+  - table of contents numbering out of sequence (gaps, duplicates,
+    skipped levels), restarting at 1 under each ### chapter heading
   - front matter problems (missing title/chapter, wrong layout for the folder)
   - math delimiter problems ($ / $$ unbalanced, \\left without \\right)
   - links between D/ and T/ pages not written as ../D/slug or ../T/slug
@@ -89,6 +91,36 @@ def check_toc(problems):
         for p in sorted((ROOT / d).glob("*.md")):
             if p.resolve().with_suffix("") not in linked:
                 problems.append(f"{rel(p)}: not linked from I/ToC.md")
+
+
+TOC_DEPTH = 3  # chapter section 1., subsection 1.1., page 1.1.1.
+TOC_NUMBER = re.compile(r"^(?:&nbsp;)*(\d+(?:\.\d+)*)\\?\.\s")
+
+
+def check_toc_numbering(problems):
+    """Each number must follow the previous one: the next sibling at some
+    level (1.1.4 -> 1.1.5, 1.1.5 -> 1.2) or the first child (1.2 -> 1.2.1),
+    at most TOC_DEPTH levels deep.
+    Numbering restarts under each ### heading."""
+    prev = None
+    for lineno, line in enumerate(TOC.read_text().splitlines(), 1):
+        if line.startswith("#"):
+            prev = None
+            continue
+        m = TOC_NUMBER.match(line)
+        if not m:
+            continue
+        num = tuple(int(n) for n in m.group(1).split("."))
+        if prev is None:
+            allowed = [(1,)]
+        else:
+            allowed = [prev[:k] + (prev[k] + 1,) for k in range(len(prev))]
+            if len(prev) < TOC_DEPTH:
+                allowed.append(prev + (1,))
+        if num not in allowed:
+            want = " or ".join(".".join(map(str, a)) for a in allowed)
+            problems.append(f"I/ToC.md:{lineno}: numbered {m.group(1)}, expected {want}")
+        prev = num
 
 
 def check_front_matter(problems):
@@ -269,6 +301,7 @@ def main():
     problems = []
     check_links(content_files(), problems)
     check_toc(problems)
+    check_toc_numbering(problems)
     check_front_matter(problems)
     check_math(problems)
     asides = check_graph(problems)

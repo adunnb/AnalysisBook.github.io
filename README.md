@@ -21,6 +21,52 @@ Content is organized into two folders:
 The table of contents is in `I/ToC.md`, and `recent.md` is a dated feed
 of new pages. `graph.md` is the interactive dependency graph.
 
+## Adding a page
+
+1. **Create it.** This writes the front matter and adds the page to
+   `recent.md` under today's date:
+
+   ```sh
+   python3 scripts/new_page.py D closed-set "Closed Set" \
+       --chapter "Limits and Continuity" --terms "closed set" "closed sets"
+   ```
+
+   `--chapter` must be a name other pages already use (the script lists
+   them if it isn't); for the first page of a new section add
+   `--new-chapter`. `--terms` are the phrases that should link to this
+   page from elsewhere.
+
+2. **Write it**, and link the pages it uses where the statement or proof
+   uses them (see [Writing a page](#writing-a-page)). These links are the
+   page's prerequisites in the dependency graph. To find the ones you
+   missed:
+
+   ```sh
+   python3 scripts/autolink.py --into D/closed-set
+   ```
+
+   Review the suggestions, then re-run with `--write`, using `--exclude`
+   for any wrong ones.
+
+3. **Add it to `I/ToC.md`** at its place in reading order. If it goes in
+   the middle of a subsection, renumber the entries after it.
+
+4. **Link to it from existing pages:**
+
+   ```sh
+   python3 scripts/autolink.py D/closed-set
+   ```
+
+   Again a dry run first; then `--write`, with `--exclude` as needed.
+
+5. **Check:** `python3 scripts/check.py` must pass. It catches a page
+   missing from the ToC, ToC numbering mistakes, broken links and
+   dependency cycles.
+
+6. **Commit and push.** The dependency graph, `graph.json` and each
+   page's "Uses / Used in" lists are rebuilt from the links on every
+   site build; there is nothing to update by hand.
+
 ## Writing a page
 
 Each page starts with front matter:
@@ -69,7 +115,9 @@ of them for details):
        --chapter "Limits and Continuity" --terms "closed set"
    ```
 
-   Add the page to `I/ToC.md` by hand; the numbering there is manual.
+   Add the page to `I/ToC.md` by hand; the numbering there is manual
+   (`check.py` verifies it). Use `--new-chapter` for a chapter name no
+   page uses yet.
 
 2. **`autolink.py`** links mentions of a page across `D/` and `T/`. It is a
    dry run by default: review the proposed links, leave out wrong ones
@@ -83,8 +131,21 @@ of them for details):
    It only links the first mention per file, and never touches math,
    existing links, headings or bold text.
 
+   `--into PAGE` works the other way round: it looks for every other
+   page's terms in PAGE alone, to link a new page to what it uses.
+
+   ```sh
+   python3 scripts/autolink.py --into D/closed-set
+   ```
+
+   Terms come from each page's `link_terms`, or else its title. A page
+   without `link_terms` is only found where its full title appears, so
+   give pages `link_terms` when the title isn't how the text names them
+   ("Upper Bound and Supremum" -> `["supremum", "upper bound"]`).
+
 3. **`check.py`** should pass before every push. It reports broken links,
-   pages missing from the ToC, front matter and math-delimiter problems,
+   pages missing from the ToC, ToC numbering out of sequence (gaps,
+   duplicates), front matter and math-delimiter problems,
    links not in the `../D/slug` form, stale `ignore_edges` entries and
    dependency cycles. `python3 scripts/check.py --aside-links` lists the
    links that appear only in Remarks, Examples and Intuitions, to check

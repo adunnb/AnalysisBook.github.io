@@ -6,6 +6,13 @@ Usage:
     python3 scripts/autolink.py D/neighborhood            # uses link_terms or title
     python3 scripts/autolink.py D/open-set "open set" --write
     python3 scripts/autolink.py D/supremum "bounded above" --exclude D/bounded-sequence
+    python3 scripts/autolink.py --into D/closed-set     # links *from* a new page
+
+By default, mentions of the target page are linked in every other page.
+With --into PAGE it works the other way round: every other page's terms
+are looked for in PAGE alone, which is how a new page gets links to what
+it uses (its prerequisites in the dependency graph). --exclude then names
+pages not to link to.
 
 Terms come from the command line; if none are given, from a `link_terms:`
 list in the target page's front matter; failing that, from its title.
@@ -127,22 +134,83 @@ def context(text, i, width=60):
     return text[max(0, i - width): end + width].replace("\n", " ")
 
 
+def page_path(name):
+    """D/open-set or D/open-set.md -> (Path of the file, "D/open-set")."""
+    p = Path(name)
+    p = p.with_suffix("") if p.suffix == ".md" else p
+    f = ROOT / p.with_suffix(".md")
+    if not f.exists():
+        sys.exit(f"No such page: {f.relative_to(ROOT)}")
+    return f, p.as_posix()
+
+
+def linked_from(text, url):
+    """{False} if text links url in its main text, {True} if only in asides."""
+    already = re.compile(rf"\]\({re.escape(url)}(?:\.md)?(?:#[^)]*)?\)")
+    return {aside for para, aside in paragraphs(text) if already.search(para)}
+
+
+def link_into(page_file, excluded, write):
+    """Link mentions of every other page inside page_file."""
+    targets = []
+    for d in SEARCH_DIRS:
+        for p in sorted((ROOT / d).glob("*.md")):
+            if p == page_file or p.resolve() in excluded:
+                continue
+            terms = terms_from_page(p)
+            if terms:
+                targets.append((p.relative_to(ROOT).with_suffix("").as_posix(), terms))
+    # Longest terms first, so "uniform convergence" claims its text before
+    # "convergence" can.
+    targets.sort(key=lambda t: -max(len(x) for x in t[1]))
+
+    rel = page_file.relative_to(ROOT)
+    print(f"Linking other pages into {rel}" + ("" if write else "   (dry run)"))
+    text, count = page_file.read_text(), 0
+    for target, terms in targets:
+        url = f"../{target}"
+        linked_in = linked_from(text, url)
+        if False in linked_in:
+            continue
+        new_text, hits = link_file(text, term_pattern(terms), url, False,
+                                   main_only=True in linked_in)
+        for i, aside in hits:
+            note = "  (see also)" if aside else ""
+            print(f"  -> {target}: ...{context(new_text, i)}...{note}")
+            count += 1
+        text = new_text
+    if write and count:
+        page_file.write_text(text)
+    verb = "Added" if write else "Would add"
+    print(f"{verb} {count} link(s).")
+    if count and not write:
+        print("Re-run with --write to apply, adding --exclude for any wrong ones.")
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("target", help="page to link to, e.g. D/open-set or D/open-set.md")
+    ap.add_argument("target", nargs="?", help="page to link to, e.g. D/open-set or D/open-set.md")
     ap.add_argument("terms", nargs="*", help="phrases to link (default: link_terms or title)")
     ap.add_argument("--write", action="store_true", help="apply changes (default: dry run)")
     ap.add_argument("--all", action="store_true", help="link every mention, not just the first per file")
     ap.add_argument("--exclude", nargs="+", default=[], metavar="PAGE",
                     help="pages to leave alone, e.g. --exclude D/bounded-sequence T/archimedean")
+    ap.add_argument("--into", metavar="PAGE",
+                    help="link mentions of all other pages inside PAGE instead")
     args = ap.parse_args()
 
-    target = Path(args.target)
-    target = target.with_suffix("") if target.suffix == ".md" else target
-    target_file = ROOT / target.with_suffix(".md")
-    if not target_file.exists():
-        sys.exit(f"No such page: {target_file.relative_to(ROOT)}")
+    excluded = {(ROOT / Path(e).with_suffix(".md")).resolve() for e in args.exclude}
+    if args.into:
+        if args.target or args.terms or args.all:
+            ap.error("--into takes no target, terms or --all")
+        link_into(page_path(args.into)[0], excluded, args.write)
+        return
+    if not args.target:
+        ap.error("give a target page, or --into PAGE")
+
+    target_file, target = page_path(args.target)
+    target = Path(target)
 
     terms = args.terms or terms_from_page(target_file)
     if not terms:
@@ -150,8 +218,6 @@ def main():
 
     url = f"../{target.as_posix()}"
     pattern = term_pattern(terms)
-    excluded = {(ROOT / Path(e).with_suffix(".md")).resolve() for e in args.exclude}
-    already_linked = re.compile(rf"\]\({re.escape(url)}(?:\.md)?(?:#[^)]*)?\)")
 
     print(f"Linking {terms} -> {url}" + ("" if args.write else "   (dry run)"))
     changed = 0
@@ -163,8 +229,7 @@ def main():
             # Skip files that already depend on the target. A file that only
             # links it from a Remark/Example/Intuition still gets a main-text
             # link if the term appears there, but no second see-also link.
-            linked_in = {aside for para, aside in paragraphs(text)
-                         if already_linked.search(para)}
+            linked_in = linked_from(text, url)
             if False in linked_in and not args.all:
                 continue
             new_text, hits = link_file(text, pattern, url, args.all,
