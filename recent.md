@@ -9,6 +9,11 @@ A running feed of new pages, newest first. *Definitions* are set in
 **October 7, 2026**
 - *[Cartesian Product](D/cartesian-product)*
 - **[Russell's Paradox](T/russell-paradox)**
+- *[Function](D/function)*
+- *[Image](D/image)*
+- *[Preimage](D/preimage)*
+- **[Images of Unions and Intersections](T/image-operations)**
+- **[Preimages of Unions and Intersections](T/preimage-operations)**
 
 **October 5, 2026**
 - *[Sets](D/set)*

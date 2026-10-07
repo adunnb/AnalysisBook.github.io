@@ -4,7 +4,7 @@ title: "Uniform Continuity"
 chapter: "Limits and Continuity"
 ---
 
-**Definition:** A function $f : A \to \mathbb{R}$ is **uniformly continuous on $A$** if for every $\varepsilon > 0$ there exists $\delta > 0$ such that for all $x, y \in A$:
+**Definition:** A [function](../D/function) $f : A \to \mathbb{R}$ is **uniformly continuous on $A$** if for every $\varepsilon > 0$ there exists $\delta > 0$ such that for all $x, y \in A$:
 
 $$\lvert x - y \rvert < \delta \implies \lvert f(x) - f(y) \rvert < \varepsilon$$
 

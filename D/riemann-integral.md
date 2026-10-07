@@ -12,7 +12,7 @@ The **lower integral** of $f$ is:
 
 $$L(f) = \sup\{L(f, P) : P \text{ is a partition of } [a,b]\}$$
 
-We always have $L(f) \leq U(f)$. The function $f$ is **Riemann integrable** on $[a, b]$ if:
+We always have $L(f) \leq U(f)$. The [function](../D/function) $f$ is **Riemann integrable** on $[a, b]$ if:
 
 $$L(f) = U(f)$$
 

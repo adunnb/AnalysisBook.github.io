@@ -4,7 +4,7 @@ title: "Pointwise Convergence"
 chapter: "Sequences of Functions"
 ---
 
-**Definition:** Let $(f_n)$ be a sequence of functions $f_n : A \to \mathbb{R}$. We say $(f_n)$ **converges pointwise** to a function $f : A \to \mathbb{R}$ if for every $x \in A$:
+**Definition:** Let $(f_n)$ be a sequence of [functions](../D/function) $f_n : A \to \mathbb{R}$. We say $(f_n)$ **converges pointwise** to a function $f : A \to \mathbb{R}$ if for every $x \in A$:
 
 $$\lim_{n \to \infty} f_n(x) = f(x)$$
 

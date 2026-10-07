@@ -14,6 +14,6 @@ $$f^{(n)}(c) = \left(f^{(n-1)}\right)'(c)$$
 
 provided the derivative exists. We say $f$ is **$n$ times differentiable** at $c$ if $f^{(n)}(c)$ exists.
 
-A function is **infinitely differentiable** (or **smooth**) on $A$ if $f^{(n)}$ exists on $A$ for every $n \in \mathbb{N}$. The class of infinitely differentiable functions on $A$ is denoted $C^{\infty}(A)$.
+A [function](../D/function) is **infinitely differentiable** (or **smooth**) on $A$ if $f^{(n)}$ exists on $A$ for every $n \in \mathbb{N}$. The class of infinitely differentiable functions on $A$ is denoted $C^{\infty}(A)$.
 
 **Remark:** A function can be $n$ times differentiable without being $(n+1)$ times differentiable. For example $f(x) = \lvert x \rvert^3$ is twice differentiable at $0$ but not three times differentiable there.

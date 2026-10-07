@@ -22,6 +22,13 @@ title: "Table of Contents"
 &nbsp;&nbsp;&nbsp;&nbsp;1.1.9. **[De Morgan's laws](../T/de-morgan)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;1.1.10. **[Russell's paradox](../T/russell-paradox)**<br>
 
+&nbsp;&nbsp;1.2. Functions<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.2.1. *[Function](../D/function)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.2.2. *[Image](../D/image)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.2.3. *[Preimage](../D/preimage)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.2.4. **[Images of unions and intersections](../T/image-operations)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.2.5. **[Preimages of unions and intersections](../T/preimage-operations)**<br>
+
 2\. The Rational Numbers
 
 &nbsp;&nbsp;2.1. Algebraic Structure<br>
