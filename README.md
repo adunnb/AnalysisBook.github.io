@@ -11,6 +11,10 @@ Springer, 2015).
 
 **Live site:** https://adunnb.github.io/AnalysisBook.github.io
 
+**Dependency graph:** https://adunnb.github.io/AnalysisBook.github.io/graph,
+an interactive map of every definition and theorem and which results
+each one builds on.
+
 ## Structure
 
 Content is organized into two folders:
@@ -194,8 +198,10 @@ to it have no effect.
 
 ## Status
 
-This book is a work in progress. Revisions are being carried out 
-across the chapters to update links.
+This book is a work in progress. New pages are added regularly, and
+Chapter I is being expanded into a full chapter on number systems
+(sets, functions, induction, cardinality and the rationals); see
+[Recently Added](https://adunnb.github.io/AnalysisBook.github.io/recent).
 
 ## Attribution
 
@@ -206,4 +212,5 @@ used under CC-BY-SA 4.0.
 ## License
 
 The content of this book is licensed under
-[CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+[CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); the full
+text is in [LICENSE](LICENSE).
