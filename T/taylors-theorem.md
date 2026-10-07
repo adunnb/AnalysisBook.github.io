@@ -4,15 +4,15 @@ title: "Taylor's Theorem"
 chapter: "Differentiation"
 ---
 
-**Theorem:** Let $f : [a, b] \to \mathbb{R}$ be [$n$ times differentiable](../D/higher-derivatives) on $[a, b]$ with $f^{(n)}$ [continuous](../D/continuity) on $[a, b]$ and $(n+1)$ times [differentiable](../D/derivative) on $(a, b)$. Then for any $x, c \in [a, b]$ there exists a point $\xi$ strictly between $x$ and $c$ such that:
+**Theorem:** Let $f : [a, b] \to \mathbb{R}$ be [$n$ times differentiable](../D/higher-derivatives) on $[a, b]$ with $f^{(n)}$ [continuous](../D/continuity) on $[a, b]$ and $(n+1)$ times [differentiable](../D/derivative) on $(a, b)$. Then for any $x, c \in [a, b]$ with $x \neq c$ there exists a point $\xi$ strictly between $x$ and $c$ such that:
 
 $$f(x) = \sum_{k=0}^{n} \frac{f^{(k)}(c)}{k!}(x-c)^k + \frac{f^{(n+1)}(\xi)}{(n+1)!}(x-c)^{n+1}$$
 
 The sum $\displaystyle P_n(x) = \sum_{k=0}^{n} \frac{f^{(k)}(c)}{k!}(x-c)^k$ is called the **$n$-th order Taylor polynomial** of $f$ centered at $c$, and the remaining term $\displaystyle R_n(x) = \frac{f^{(n+1)}(\xi)}{(n+1)!}(x-c)^{n+1}$ is called the **Lagrange remainder**.
 
-**Remark:** Taylor's theorem generalizes the [mean value theorem](../T/mean-value), which is the case $n = 0$. It says that a smooth function can be approximated by a polynomial, with the remainder controlled by a higher derivative.
+**Remark:** Taylor's theorem generalizes the [mean value theorem](../T/mean-value), which is the case $n = 0$. It says that a smooth function can be approximated by a polynomial, with the remainder controlled by a higher derivative. When $x = c$ the formula holds trivially, since both sides equal $f(c)$, but there is no point strictly between $x$ and $c$; this is why the theorem assumes $x \neq c$.
 
-**Proof:** Fix $x$ and $c$ and define the constant $K$ by:
+**Proof:** Fix $x \neq c$ and define the constant $K$ (possible since $(x-c)^{n+1} \neq 0$) by:
 
 $$f(x) = \sum_{k=0}^{n} \frac{f^{(k)}(c)}{k!}(x-c)^k + K(x-c)^{n+1}$$
 

@@ -4,9 +4,11 @@ title: "Sequential Characterization of Functional Limits"
 chapter: "Limits and Continuity"
 ---
 
-**Theorem:** Let $f : A \to \mathbb{R}$ and let $c$ be a [limit point](../D/limit-point) of $A$. Then, for any sequence $(x_n) \subseteq A \text{ with } x_n \neq c \text{ and } x_n \to c$:
+**Theorem:** Let $f : A \to \mathbb{R}$ and let $c$ be a [limit point](../D/limit-point) of $A$. Then $\lim_{x \to c} f(x) = L$ if and only if
 
-$$\lim_{x \to c} f(x) = L \iff f(x_n) \to L$$
+$$f(x_n) \to L \quad \text{for every sequence } (x_n) \subseteq A \text{ with } x_n \neq c \text{ and } x_n \to c,$$
+
+where $x_n \to c$ means that $(x_n)$ [converges](../D/convergence-sequence) to $c$.
 
 **Remark:** This theorem is extremely useful in practice. It allows us to extend all the machinery of [sequence limits](../D/convergence-sequence) to study functional limits, and to prove that limits do not exist by finding two sequences approaching $c$ along which $f$ converges to different values.
 
