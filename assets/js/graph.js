@@ -550,7 +550,7 @@
               ? ", plus " + count(view.context, "prerequisite") +
                 " from other chapters (dashed outline)."
               : ".")
-          : "Showing all " + count(view.pages, "page") + " in the book.";
+          : "Showing all " + count(view.pages, "page") + ".";
       }
 
       function select(id) {

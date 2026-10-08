@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "A First Course in Real Analysis"
+title: "AnalysisGraph"
 ---
 
 <!-- Style -->
@@ -18,9 +18,9 @@ h1 {
 }
 </style>
 
-Welcome to **A First Course in Real Analysis** --  
-*an open, rigorous, and readable introduction  
-to the foundations of real analysis*!
+Welcome to **AnalysisGraph** -- *a graph of real analysis*!
+Every definition and theorem, with full proofs, linked by what
+depends on what.
 
 [Table of Contents](I/ToC) · [Dependency Graph](graph)
 
@@ -38,7 +38,7 @@ to the foundations of real analysis*!
   <div class="book-graph-canvas"></div>
   <p class="home-graph-cta">
     <a href="graph">Explore the full dependency graph &rarr;</a>
-    <span>Every definition and theorem in the book, and how they connect.</span>
+    <span>Every definition and theorem, and how they connect.</span>
   </p>
 </div>
 
@@ -46,4 +46,4 @@ to the foundations of real analysis*!
 
 ---
 
-*This book is a work in progress! New content is added regularly.*
+*AnalysisGraph is a work in progress! New content is added regularly.*

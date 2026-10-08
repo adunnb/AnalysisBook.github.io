@@ -1,17 +1,18 @@
-# A First Course in Real Analysis
+# AnalysisGraph
 
-An open, rigorous, and readable introduction to real analysis for 
-undergraduate mathematics students, presented as a Jekyll site 
-hosted on GitHub Pages.
+*A graph of real analysis.* Every definition and theorem, with full
+proofs, linked by what depends on what. It is aimed at undergraduate
+mathematics students and presented as a Jekyll site hosted on GitHub
+Pages.
 
-The book covers the real number system, sequences and series, 
-continuity, differentiation, and integration, loosely following 
+It covers set theory and functions, the real number system, sequences
+and series, continuity, differentiation, and integration, loosely following 
 the structure of Abbott's *Understanding Analysis* (2nd ed., 
 Springer, 2015).
 
-**Live site:** https://adunnb.github.io/AnalysisBook.github.io
+**Live site:** https://adunnb.github.io/AnalysisGraph
 
-**Dependency graph:** https://adunnb.github.io/AnalysisBook.github.io/graph,
+**Dependency graph:** https://adunnb.github.io/AnalysisGraph/graph,
 an interactive map of every definition and theorem and which results
 each one builds on.
 
@@ -202,7 +203,7 @@ This book is a work in progress. New pages are added regularly:
 Chapter 0 covers set theory and functions, and Chapter I is being
 expanded into a full chapter on number systems (induction,
 cardinality and the rationals); see
-[Recently Added](https://adunnb.github.io/AnalysisBook.github.io/recent).
+[Recently Added](https://adunnb.github.io/AnalysisGraph/recent).
 
 ## Attribution
 

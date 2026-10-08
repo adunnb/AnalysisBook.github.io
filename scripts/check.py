@@ -34,7 +34,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 TOC = ROOT / "I" / "ToC.md"
-BASEURL = "/AnalysisBook.github.io"
+_BASE = re.search(r'^baseurl:\s*"?([^"\s#]*)', (ROOT / "_config.yml").read_text(), re.MULTILINE)
+BASEURL = _BASE.group(1) if _BASE else ""
 LAYOUTS = {"D": "definition", "T": "proof"}
 
 GRAPH_LINK = re.compile(r"^\.\./([DT]/[a-z0-9]+(?:-[a-z0-9]+)*)(?:#[\w-]*)?$")

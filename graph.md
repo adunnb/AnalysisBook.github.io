@@ -3,7 +3,7 @@ layout: page
 title: "Dependency Graph"
 ---
 
-Every definition and theorem in the book, each drawn below the pages it builds
+Every definition and theorem in AnalysisGraph, each drawn below the pages it builds
 on. Use it to see what a result needs, or what it leads to. The
 [Table of Contents](I/ToC) lists the same pages in reading order.
 
