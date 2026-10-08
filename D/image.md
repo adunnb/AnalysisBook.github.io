@@ -13,4 +13,4 @@ The set $f(A)$ is called the **image** (or **range**) of $f$.
 
 **Example:** For $f : \mathbb{R} \to \mathbb{R}$, $f(x) = x^2 + 5$, we have $f(\mathbb{R}) = [5, \infty)$ and $f((-\infty, -3]) = [14, \infty)$.
 
-**Remark:** The image of a function can be much smaller than its codomain. For $f(x) = x^2$ on $\mathbb{R}$, the codomain is $\mathbb{R}$ but the image is $[0, \infty)$. A function whose image equals its codomain is called **surjective**.
+**Remark:** The image of a function can be much smaller than its codomain. For $f(x) = x^2$ on $\mathbb{R}$, the codomain is $\mathbb{R}$ but the image is $[0, \infty)$. A function whose image equals its codomain is called [surjective](../D/surjective).

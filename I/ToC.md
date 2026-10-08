@@ -26,8 +26,15 @@ title: "Table of Contents"
 &nbsp;&nbsp;&nbsp;&nbsp;1.2.1. *[Function](../D/function)*<br>
 &nbsp;&nbsp;&nbsp;&nbsp;1.2.2. *[Image](../D/image)*<br>
 &nbsp;&nbsp;&nbsp;&nbsp;1.2.3. *[Preimage](../D/preimage)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.2.4. **[Images of unions and intersections](../T/image-operations)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.2.5. **[Preimages of unions and intersections](../T/preimage-operations)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.2.4. *[Injective function](../D/injective)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.2.5. *[Surjective function](../D/surjective)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.2.6. *[Bijective function](../D/bijective)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.2.7. *[Composition of functions](../D/composition)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.2.8. *[Inverse function](../D/inverse-function)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.2.9. **[Images of unions and intersections](../T/image-operations)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.2.10. **[Preimages of unions and intersections](../T/preimage-operations)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.2.11. **[Composition of injections, surjections, and bijections](../T/composition-bijections)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.2.12. **[Characterization of bijections by inverses](../T/inverse-characterization)**<br>
 
 2\. The Rational Numbers
 

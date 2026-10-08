@@ -6,6 +6,15 @@ title: "Recently Added"
 A running feed of new pages, newest first. *Definitions* are set in
 *italics* -- **Theorems** are printed in **bold**.
 
+**October 8, 2026**
+- *[Injective Function](D/injective)*
+- *[Surjective Function](D/surjective)*
+- *[Bijective Function](D/bijective)*
+- *[Composition of Functions](D/composition)*
+- *[Inverse Function](D/inverse-function)*
+- **[Composition of Injections, Surjections, and Bijections](T/composition-bijections)**
+- **[Characterization of Bijections by Inverses](T/inverse-characterization)**
+
 **October 7, 2026**
 - *[Cartesian Product](D/cartesian-product)*
 - **[Russell's Paradox](T/russell-paradox)**

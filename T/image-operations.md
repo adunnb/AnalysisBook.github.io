@@ -15,7 +15,7 @@ link_terms: ["images of unions and intersections"]
 
 $$f(A \cap B) = \varnothing, \qquad f(A) \cap f(B) = \{1\}$$
 
-Equality in (3) holds for all $A, B$ exactly when $f$ is injective. In contrast, [preimages](../T/preimage-operations) respect every set operation.
+Equality in (3) holds for all $A, B$ exactly when $f$ is [injective](../D/injective). In contrast, [preimages](../T/preimage-operations) respect every set operation.
 
 **Proof of (1):** If $y \in f(A)$, then $y = f(x)$ for some $x \in A \subseteq B$, so $y \in f(B)$.
 

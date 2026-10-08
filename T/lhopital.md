@@ -22,7 +22,7 @@ Since $f(a) = g(a) = 0$:
 
 $$f'(c) \cdot g(x) = g'(c) \cdot f(x)$$
 
-Since $g'(c) \neq 0$ and $g(x) \neq 0$ (as $g'$ is nonzero on $(a,b)$, $g$ is injective near $a$):
+Since $g'(c) \neq 0$ and $g(x) \neq 0$ (as $g'$ is nonzero on $(a,b)$, $g$ is [injective](../D/injective) near $a$):
 
 $$\frac{f(x)}{g(x)} = \frac{f'(c)}{g'(c)}$$
 
