@@ -158,13 +158,25 @@ def check_math(problems):
                 problems.append(f"{rel(p)}: {lefts} \\left vs {rights} \\right")
 
 
+def split_inline_list(items):
+    """Split the inside of a YAML inline list, keeping commas that are
+    inside quotes: '"a, b", c' -> ['a, b', 'c']."""
+    out = []
+    for m in re.finditer(r'\s*(?:"((?:[^"\\]|\\.)*)"|\'([^\']*)\'|([^,]+))\s*(?:,|$)', items):
+        item = m.group(1) if m.group(1) is not None else m.group(2) if m.group(2) is not None else m.group(3)
+        item = item.replace('\\"', '"').strip()
+        if item:
+            out.append(item)
+    return out
+
+
 def fm_list(text, key):
     """Read a YAML list (inline [..] or block - ..) from front matter."""
     m = FRONT_MATTER.match(text)
     fm = m.group(1) if m else ""
     inline = re.search(rf"^{key}:\s*\[(.*?)\]", fm, re.MULTILINE)
     if inline:
-        items = inline.group(1).split(",")
+        return split_inline_list(inline.group(1))
     else:
         block = re.search(rf"^{key}:\s*\n((?:\s*-\s*.+\n?)+)", fm, re.MULTILINE)
         items = re.findall(r"-\s*(.+)", block.group(1)) if block else []

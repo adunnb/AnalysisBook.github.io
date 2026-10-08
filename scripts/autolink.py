@@ -38,7 +38,7 @@ import re
 import sys
 from pathlib import Path
 
-from check import paragraphs
+from check import paragraphs, split_inline_list
 
 ROOT = Path(__file__).resolve().parent.parent
 SEARCH_DIRS = ["D", "T"]
@@ -72,7 +72,7 @@ def terms_from_page(path):
     fm = read_front_matter(path.read_text())
     m = re.search(r"^link_terms:\s*\[(.*?)\]", fm, re.MULTILINE)
     if m:
-        return [t.strip().strip("\"'") for t in m.group(1).split(",") if t.strip()]
+        return split_inline_list(m.group(1))
     m = re.search(r"^link_terms:\s*\n((?:\s*-\s*.+\n)+)", fm, re.MULTILINE)
     if m:
         return [re.sub(r"^\s*-\s*", "", l).strip().strip("\"'")
