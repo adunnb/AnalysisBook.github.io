@@ -1,7 +1,7 @@
 ---
 layout: definition
 title: "Cartesian Product"
-chapter: "Sets and Functions"
+chapter: "Set Theory and Functions"
 link_terms: ["Cartesian product", "ordered pair", "direct product"]
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: proof
 title: "De Morgan's Laws"
-chapter: "Sets and Functions"
+chapter: "Set Theory and Functions"
 link_terms: ["De Morgan's laws", "De Morgan's law"]
 ---
 

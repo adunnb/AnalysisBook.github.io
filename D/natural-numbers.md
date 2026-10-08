@@ -1,7 +1,7 @@
 ---
 layout: definition
 title: "Natural Numbers and Integers"
-chapter: "Sets and Functions"
+chapter: "The Natural Numbers"
 ---
 
 **Definition:** The **natural numbers** are the set:

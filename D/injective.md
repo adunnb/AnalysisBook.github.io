@@ -1,7 +1,7 @@
 ---
 layout: definition
 title: "Injective Function"
-chapter: "Sets and Functions"
+chapter: "Set Theory and Functions"
 link_terms: ["injective", "injection", "one-to-one"]
 ---
 

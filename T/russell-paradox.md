@@ -1,7 +1,7 @@
 ---
 layout: proof
 title: "Russell's Paradox"
-chapter: "Sets and Functions"
+chapter: "Set Theory and Functions"
 link_terms: ["Russell's paradox", "set of all sets"]
 ---
 

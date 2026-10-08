@@ -1,7 +1,7 @@
 ---
 layout: definition
 title: "Image"
-chapter: "Sets and Functions"
+chapter: "Set Theory and Functions"
 link_terms: ["image", "range"]
 ---
 

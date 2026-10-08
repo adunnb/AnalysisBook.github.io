@@ -6,35 +6,43 @@ title: "Table of Contents"
 *Definitions* are set in *italics* --
 **Theorems** are printed in **bold**
 
+### Chapter 0: Set Theory and Functions
+
+1\. Sets
+
+&nbsp;&nbsp;1.1. Sets and Set Operations<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.1. *[Sets](../D/set)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.2. *[Subset and set equality](../D/subset)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.3. *[Power set](../D/power-set)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.4. *[Union and intersection](../D/union-intersection)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.5. *[Set difference and complement](../D/set-difference)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.6. *[Indexed family of sets](../D/indexed-family)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.7. *[Cartesian product](../D/cartesian-product)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.8. **[De Morgan's laws](../T/de-morgan)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.9. **[Russell's paradox](../T/russell-paradox)**<br>
+
+2\. Functions
+
+&nbsp;&nbsp;2.1. Functions and Their Properties<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.1. *[Function](../D/function)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.2. *[Image](../D/image)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.3. *[Preimage](../D/preimage)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.4. *[Injective function](../D/injective)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.5. *[Surjective function](../D/surjective)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.6. *[Bijective function](../D/bijective)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.7. *[Composition of functions](../D/composition)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.8. *[Inverse function](../D/inverse-function)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.9. **[Images of unions and intersections](../T/image-operations)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.10. **[Preimages of unions and intersections](../T/preimage-operations)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.11. **[Composition of injections, surjections, and bijections](../T/composition-bijections)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.12. **[Characterization of bijections by inverses](../T/inverse-characterization)**<br>
+
 ### Chapter I: Number Systems
 
-1\. Sets and Functions
+1\. The Natural Numbers
 
-&nbsp;&nbsp;1.1. Sets<br>
+&nbsp;&nbsp;1.1. Natural Numbers and Induction<br>
 &nbsp;&nbsp;&nbsp;&nbsp;1.1.1. *[Natural numbers and integers](../D/natural-numbers)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.2. *[Sets](../D/set)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.3. *[Subset and set equality](../D/subset)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.4. *[Power set](../D/power-set)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.5. *[Union and intersection](../D/union-intersection)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.6. *[Set difference and complement](../D/set-difference)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.7. *[Indexed family of sets](../D/indexed-family)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.8. *[Cartesian product](../D/cartesian-product)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.9. **[De Morgan's laws](../T/de-morgan)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.1.10. **[Russell's paradox](../T/russell-paradox)**<br>
-
-&nbsp;&nbsp;1.2. Functions<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.2.1. *[Function](../D/function)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.2.2. *[Image](../D/image)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.2.3. *[Preimage](../D/preimage)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.2.4. *[Injective function](../D/injective)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.2.5. *[Surjective function](../D/surjective)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.2.6. *[Bijective function](../D/bijective)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.2.7. *[Composition of functions](../D/composition)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.2.8. *[Inverse function](../D/inverse-function)*<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.2.9. **[Images of unions and intersections](../T/image-operations)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.2.10. **[Preimages of unions and intersections](../T/preimage-operations)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.2.11. **[Composition of injections, surjections, and bijections](../T/composition-bijections)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;1.2.12. **[Characterization of bijections by inverses](../T/inverse-characterization)**<br>
 
 2\. The Rational Numbers
 

@@ -1,7 +1,7 @@
 ---
 layout: proof
 title: "Preimages of Unions and Intersections"
-chapter: "Sets and Functions"
+chapter: "Set Theory and Functions"
 link_terms: ["preimages of unions and intersections"]
 ---
 

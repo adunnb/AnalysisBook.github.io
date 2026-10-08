@@ -1,7 +1,7 @@
 ---
 layout: definition
 title: "Preimage"
-chapter: "Sets and Functions"
+chapter: "Set Theory and Functions"
 link_terms: ["preimage", "inverse image", "fiber"]
 ---
 

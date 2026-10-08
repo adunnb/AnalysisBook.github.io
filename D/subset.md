@@ -1,7 +1,7 @@
 ---
 layout: definition
 title: "Subset and Set Equality"
-chapter: "Sets and Functions"
+chapter: "Set Theory and Functions"
 link_terms: ["subset", "proper subset"]
 ---
 

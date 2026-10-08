@@ -1,7 +1,7 @@
 ---
 layout: definition
 title: "Indexed Family of Sets"
-chapter: "Sets and Functions"
+chapter: "Set Theory and Functions"
 link_terms: ["indexed family", "indexed families"]
 ---
 

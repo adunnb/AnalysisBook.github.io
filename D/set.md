@@ -1,7 +1,7 @@
 ---
 layout: definition
 title: "Sets"
-chapter: "Sets and Functions"
+chapter: "Set Theory and Functions"
 link_terms: ["empty set", "set-builder notation"]
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: definition
 title: "Bijective Function"
-chapter: "Sets and Functions"
+chapter: "Set Theory and Functions"
 link_terms: ["bijective", "bijection", "one-to-one correspondence"]
 ---
 

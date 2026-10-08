@@ -1,7 +1,7 @@
 ---
 layout: definition
 title: "Union and Intersection"
-chapter: "Sets and Functions"
+chapter: "Set Theory and Functions"
 link_terms: ["union", "intersection", "disjoint"]
 ---
 

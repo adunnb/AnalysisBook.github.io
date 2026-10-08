@@ -1,7 +1,7 @@
 ---
 layout: proof
 title: "Characterization of Bijections by Inverses"
-chapter: "Sets and Functions"
+chapter: "Set Theory and Functions"
 link_terms: ["characterization of bijections by inverses"]
 ---
 

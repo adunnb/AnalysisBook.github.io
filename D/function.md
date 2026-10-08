@@ -1,7 +1,7 @@
 ---
 layout: definition
 title: "Function"
-chapter: "Sets and Functions"
+chapter: "Set Theory and Functions"
 link_terms: ["function", "domain", "codomain", "restriction", "graph of a function"]
 ---
 

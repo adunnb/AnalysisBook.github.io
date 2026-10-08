@@ -1,7 +1,7 @@
 ---
 layout: proof
 title: "Composition of Injections, Surjections, and Bijections"
-chapter: "Sets and Functions"
+chapter: "Set Theory and Functions"
 link_terms: ["composition of injections, surjections, and bijections"]
 ---
 

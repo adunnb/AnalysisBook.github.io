@@ -1,7 +1,7 @@
 ---
 layout: definition
 title: "Surjective Function"
-chapter: "Sets and Functions"
+chapter: "Set Theory and Functions"
 link_terms: ["surjective", "surjection"]
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: definition
 title: "Power Set"
-chapter: "Sets and Functions"
+chapter: "Set Theory and Functions"
 link_terms: ["power set"]
 ---
 

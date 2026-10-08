@@ -1,7 +1,7 @@
 ---
 layout: definition
 title: "Composition of Functions"
-chapter: "Sets and Functions"
+chapter: "Set Theory and Functions"
 link_terms: ["composition", "identity function"]
 ---
 

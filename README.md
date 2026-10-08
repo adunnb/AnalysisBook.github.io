@@ -198,9 +198,10 @@ to it have no effect.
 
 ## Status
 
-This book is a work in progress. New pages are added regularly, and
-Chapter I is being expanded into a full chapter on number systems
-(sets, functions, induction, cardinality and the rationals); see
+This book is a work in progress. New pages are added regularly:
+Chapter 0 covers set theory and functions, and Chapter I is being
+expanded into a full chapter on number systems (induction,
+cardinality and the rationals); see
 [Recently Added](https://adunnb.github.io/AnalysisBook.github.io/recent).
 
 ## Attribution

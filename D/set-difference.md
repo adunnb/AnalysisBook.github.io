@@ -1,7 +1,7 @@
 ---
 layout: definition
 title: "Set Difference and Complement"
-chapter: "Sets and Functions"
+chapter: "Set Theory and Functions"
 link_terms: ["complement", "set difference", "symmetric difference"]
 ---
 
