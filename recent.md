@@ -9,6 +9,9 @@ A running feed of new pages, newest first. *Definitions* are set in
 **October 10, 2026**
 - **[Injectivity and Intersections](T/injectivity-intersections)**
 - **[Principle of Mathematical Induction](T/induction)**
+- **[Strong Induction](T/strong-induction)**
+- **[Summation Formulas](T/summation-formulas)**
+- **[Finite Geometric Sum](T/finite-geometric-sum)**
 
 **October 8, 2026**
 - *[Injective Function](D/injective)*

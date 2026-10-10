@@ -45,6 +45,9 @@ title: "Table of Contents"
 &nbsp;&nbsp;1.1. Natural Numbers and Induction<br>
 &nbsp;&nbsp;&nbsp;&nbsp;1.1.1. *[Natural numbers and integers](../D/natural-numbers)*<br>
 &nbsp;&nbsp;&nbsp;&nbsp;1.1.2. **[Principle of mathematical induction](../T/induction)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.3. **[Strong induction](../T/strong-induction)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.4. **[Summation formulas](../T/summation-formulas)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.5. **[Finite geometric sum](../T/finite-geometric-sum)**<br>
 
 2\. The Rational Numbers
 

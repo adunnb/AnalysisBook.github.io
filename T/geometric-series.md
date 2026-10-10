@@ -14,7 +14,7 @@ If $\lvert r \rvert \geq 1$, the series diverges.
 
 $$s_n = \sum_{k=0}^{n} r^k = 1 + r + r^2 + \cdots + r^n$$
 
-For $r \neq 1$, multiplying by $r$ and subtracting:
+For $r \neq 1$, the [finite geometric sum](../T/finite-geometric-sum) formula (multiply by $r$ and subtract) gives:
 
 $$s_n(1 - r) = 1 - r^{n+1} \implies s_n = \frac{1 - r^{n+1}}{1 - r}$$
 
