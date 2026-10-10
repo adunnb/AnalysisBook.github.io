@@ -6,6 +6,10 @@ title: "Recently Added"
 A running feed of new pages, newest first. *Definitions* are set in
 *italics* -- **Theorems** are printed in **bold**.
 
+**October 10, 2026**
+- **[Injectivity and Intersections](T/injectivity-intersections)**
+- **[Principle of Mathematical Induction](T/induction)**
+
 **October 8, 2026**
 - *[Injective Function](D/injective)*
 - *[Surjective Function](D/surjective)*

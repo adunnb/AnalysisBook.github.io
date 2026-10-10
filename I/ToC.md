@@ -36,6 +36,7 @@ title: "Table of Contents"
 &nbsp;&nbsp;&nbsp;&nbsp;2.1.10. **[Preimages of unions and intersections](../T/preimage-operations)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;2.1.11. **[Composition of injections, surjections, and bijections](../T/composition-bijections)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;2.1.12. **[Characterization of bijections by inverses](../T/inverse-characterization)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.1.13. **[Injectivity and intersections](../T/injectivity-intersections)**<br>
 
 ### Chapter I: Number Systems
 
@@ -43,6 +44,7 @@ title: "Table of Contents"
 
 &nbsp;&nbsp;1.1. Natural Numbers and Induction<br>
 &nbsp;&nbsp;&nbsp;&nbsp;1.1.1. *[Natural numbers and integers](../D/natural-numbers)*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.1.2. **[Principle of mathematical induction](../T/induction)**<br>
 
 2\. The Rational Numbers
 
